@@ -87,3 +87,81 @@ Team xác định **7 stakeholder cụ thể** (không ghi chung chung) liên qu
 > - Đã đánh giá Stance thực tế kèm giải thích rõ ràng.
 > - Đã chọn đủ 4 stakeholder ưu tiên (2 Champion ủng hộ mạnh, 2 Blocker có rủi ro cản trở).
 > - Có 4 hành động cụ thể, gắn chặt với ngày giờ và kết quả bàn giao đo lường được (không viết chung chung).
+
+---
+
+## ⚡ Phase 2 — Artefact 2: Pitch "Kết luận trước" & RACI Matrix (Trang 2 PDF)
+
+### 1. Bản Pitch nháp của Team gửi Champion chủ chốt (Ông Trần Hùng — Head of Claims)
+
+* **KẾT LUẬN / ĐỀ XUẤT (Conclusion First)**:  
+  Team đề xuất triển khai chương trình **Pilot nội bộ 3 tuần giải pháp SmartClaim AI trên 200 hồ sơ claim ngoại trú**, với mục tiêu tự động hóa 80% công đoạn bóc tách chứng từ và **rút ngắn thời gian thẩm định sơ bộ từ 25 phút xuống dưới 3 phút/hồ sơ**, không can thiệp vào quy trình duyệt chi tiền hiện tại.
+
+* **LÝ DO (Why it matters)**:  
+  1. **Giải tỏa quá tải mùa cao điểm**: Dự kiến cuối năm lượng hồ sơ bồi thường tăng 40%, đội ngũ 15 chuyên viên hiện hữu sẽ quá tải nghiêm trọng nếu tiếp tục nhập liệu thủ công.  
+  2. **Nâng cao NPS & Tỷ lệ tái tục**: Thời gian chờ bồi thường kéo dài 5–7 ngày là nguyên nhân hàng đầu khiến khách hàng phàn nàn; rút ngắn về 24h sẽ tạo lợi thế cạnh tranh vượt trội cho công ty bảo hiểm.  
+  3. **Kiểm soát rủi ro gian lận**: AI tự động đối soát chéo số tiền từng dòng viện phí với tổng hóa đơn đỏ, loại bỏ 100% sai sót tính toán do mỏi mắt của con người.
+
+* **BẰNG CHỨNG (Evidence & Demo)**:  
+  • **Dữ liệu thực nghiệm**: Đã chạy thử trên tập dữ liệu benchmark 100 hóa đơn viện phí và toa thuốc thực tế gần nhất, đạt độ chính xác trích xuất **92.4%** (Exact Match các trường thông tin quan trọng: Ngày khám, Chẩn đoán ICD-10, Tổng tiền, Chi tiết thuốc).  
+  • **Demo định lượng**: Xử lý trọn bộ 1 hồ sơ 5 trang chứng từ (Hóa đơn GTGT + Bảng kê chi phí + Toa thuốc) chỉ mất **1 phút 48 giây** (so với trung bình 22 phút nhập tay của chuyên viên).  
+  • **Tỷ lệ bắt lệch**: Phát hiện chính xác 100% các ca có chênh lệch tiền giữa Bảng kê chi tiết và Hóa đơn tài chính.
+
+* **SMALL ASK (Đề nghị hành động nhỏ tiếp theo)**:  
+  Kính đề xuất anh Hùng cho phép **02 chuyên viên thẩm định cấp cao tham gia buổi Demo kỹ thuật 30 phút vào 15h thứ Năm tuần này (16/10)**, đồng thời cấp quyền truy cập **200 bộ hồ sơ lịch sử đã ẩn danh** để team chạy thử nghiệm đối soát mù (blind test) đối chiếu với kết quả của chuyên viên.
+
+---
+
+### 2. Chuẩn bị phản biện & Chiến lược xử lý rủi ro
+
+* **Phản biện có khả năng xảy ra nhất từ Stakeholder**:  
+  > *"Toa thuốc Việt Nam có chữ viết tay bác sĩ rất khó đọc, bảng kê viện phí mỗi bệnh viện một định dạng khác nhau. Nếu AI đọc sai tên thuốc, sai liều lượng hoặc bịa số tiền (hallucination) mà hệ thống tự duyệt chi thì công ty bảo hiểm sẽ thất thoát hàng trăm triệu đồng!"*
+
+* **Câu trả lời & Biện pháp giảm thiểu rủi ro dựa trên bằng chứng**:  
+  1. **Nguyên tắc "AI Copilot — Human in the Loop" (Không tự động duyệt chi)**: AI không có quyền bấm duyệt chi trả bồi thường. AI chỉ chuẩn bị sẵn dữ liệu trích xuất và highlight sẵn điều khoản bồi thường; quyết định cuối cùng 100% thuộc về thẩm định viên.  
+  2. **Cơ chế Confidence Score & Visual Bounding Box**: Mỗi trường thông tin bóc tách đều đi kèm chỉ số tin cậy (0–100%). Nếu độ tự tin < 88% hoặc rơi vào vùng chữ viết tay mờ, hệ thống tự động gắn cờ cảnh báo màu vàng kèm ảnh chụp cắt lớp chứng từ gốc kế bên, giúp thẩm định viên chỉ mất 3 giây để xác nhận/sửa đổi thay vì phải gõ lại toàn bộ.  
+  3. **Hàng rào kiểm tra logic kép (Deterministic Rule Engine)**: Số tiền trên từng dòng thuốc/dịch vụ cộng lại bắt buộc phải khớp 100% với Tổng tiền trên Hóa đơn tài chính; nếu chênh lệch dù chỉ 1.000 VNĐ, hệ thống lập tức chặn lại và yêu cầu thẩm tra.
+
+---
+
+### 3. Cá nhân viết lại Pitch & Team tổng hợp
+
+* **Nguyễn Minh Hoàng (AI Engineer)**:  
+  *Góc nhìn kỹ thuật & độ tin cậy:* "Chúng tôi đề xuất thử nghiệm mô hình Multi-modal RAG kết hợp OCR chuyên dụng cho y tế trên 200 hồ sơ. Hệ thống đã đạt 92.4% Exact Match và được trang bị Guardrails chống Hallucination đa tầng với Confidence Threshold 88%. Đề xuất anh Hùng phê duyệt buổi Test kỹ thuật 30 phút vào thứ Năm để kiểm chứng độ chính xác trực tiếp trên dữ liệu mẫu."
+* **Trần Anh Tuấn (Product Lead)**:  
+  *Góc nhìn giá trị kinh doanh & vận hành:* "Để chuẩn bị cho đợt tăng tải 40% hồ sơ cuối năm mà không cần tuyển ồ ạt nhân sự thời vụ, chúng tôi đề xuất Pilot SmartClaim AI trong 3 tuần giúp giảm 80% thời gian nhập liệu thủ công. Kết quả demo cho thấy tốc độ xử lý nhanh hơn 10 lần. Mong anh Hùng đồng ý cho 2 thẩm định viên tham gia buổi Demo 30 phút tuần này để kiểm nghiệm thực tế."
+* **Lê Quốc Khánh (Data & Backend Engineer)**:  
+  *Góc nhìn tích hợp & an toàn dữ liệu:* "Hệ thống SmartClaim AI đã sẵn sàng hoạt động độc lập qua cổng Web Portal bảo mật, không đụng chạm đến Core IT. Dữ liệu bệnh án được ẩn danh hóa PII 100% tại máy chủ cục bộ. Đề xuất anh Hùng phê duyệt bộ 200 hồ sơ lịch sử ẩn danh để chúng tôi đối soát tự động song song với kết quả thẩm định cũ."
+* 👉 **Team thống nhất**: Sử dụng phiên bản tổng hợp ở Mục 1 — kết hợp bài toán nhức nhối về năng suất của vận hành, bằng chứng thời gian/độ chính xác cụ thể và Small Ask rõ ràng, không gây áp lực cam kết lớn.
+
+---
+
+### 4. RACI Matrix (Bảng phân định trách nhiệm 6 công việc then chốt)
+
+*Nguyên tắc tuân thủ: Mỗi công việc có **đúng 1 Accountable (A) duy nhất**. Tách biệt rõ giữa người làm (R) và người chịu trách nhiệm cuối (A).*
+
+| STT | Công việc trọng tâm (1–2 tháng tới) | Product Lead<br>(Trần Anh Tuấn) | AI Engineer<br>(Nguyễn Minh Hoàng) | Backend/Data<br>(Lê Quốc Khánh) | Stakeholder chính<br>(Head of Claims / Compliance) |
+|:---:|:---|:---:|:---:|:---:|:---:|
+| **1** | **Xác định Use case & Quy tắc nghiệp vụ thẩm định** *(Claims Business Rules)* | **A** | C | C | **R** *(Trần Hùng - Head of Claims)* |
+| **2** | **Thu thập, làm sạch & Ẩn danh hóa dữ liệu y tế** *(PII Masking & Pipeline)* | C | C | **A / R** | **C** *(Đỗ Thu Hà - Compliance Officer)* |
+| **3** | **Xây dựng Pipeline Multi-modal RAG & Tối ưu OCR** *(AI Model Development)* | C | **A / R** | R | I |
+| **4** | **Kiểm thử chất lượng & Benchmark chống sai lệch** *(AI QA & Guardrails)* | **A** | R | R | I |
+| **5** | **Triển khai thử nghiệm Pilot nội bộ trên 200 hồ sơ** *(Internal Pilot Run)* | **A** | R | R | **C** *(2 Chuyên viên thẩm định)* |
+| **6** | **Nghiệm thu kết quả Pilot & Quyết định Release** *(Go/No-Go Decision)* | R | I | I | **A** *(Trần Hùng - Head of Claims)* |
+
+*Chú giải phân định RACI:*
+- **Việc 1**: *Trần Anh Tuấn (Product Lead)* chịu trách nhiệm cuối (**A**) việc chuyển hóa nghiệp vụ thành tài liệu đặc tả; *Trần Hùng (Stakeholder)* là người trực tiếp định nghĩa và cung cấp quy tắc (**R**).
+- **Việc 2**: *Lê Quốc Khánh* chịu trách nhiệm chính (**A/R**) việc pipeline dữ liệu bảo mật; *Bà Đỗ Thu Hà* được tham vấn (**C**) để chuẩn hóa phương án tuân thủ Nghị định 13.
+- **Việc 3**: *Nguyễn Minh Hoàng* chịu trách nhiệm toàn diện (**A/R**) về chất lượng mô hình AI và độ chính xác OCR.
+- **Việc 4**: *Trần Anh Tuấn* chịu trách nhiệm cuối (**A**) về tiêu chí đánh giá nghiệp vụ đạt chuẩn; Hoàng và Khánh phối hợp thực hiện (**R**).
+- **Việc 5**: *Trần Anh Tuấn* điều phối và chịu trách nhiệm toàn bộ đợt Pilot (**A**); Hoàng & Khánh hỗ trợ kỹ thuật (**R**); các thẩm định viên tham gia đóng góp ý kiến đánh giá (**C**).
+- **Việc 6**: *Trần Hùng (Stakeholder - Head of Claims)* là người duy nhất nắm quyền phê duyệt ký nghiệm thu và quyết định Go/No-Go (**A**).
+
+---
+
+> **✅ GATE 2 PASS**:
+> - Pitch chuẩn cấu trúc Conclusion First (Kết luận trước) → 3 Lý do → Bằng chứng định lượng (92.4%, 1m48s) → Small ask cụ thể (Demo 30 phút, 200 hồ sơ).
+> - Đã có 1 phản biện gay gắt nhất về rủi ro sai sót y khoa & kèm giải pháp kỹ thuật hạ tầng (Human-in-the-loop, Confidence Threshold 88%, Rule Engine đối soát).
+> - Hoàn thành phần viết lại cá nhân của 3 thành viên và tổng hợp thống nhất.
+> - Bảng RACI gồm 6 công việc trọng tâm, **mỗi hàng chỉ có ĐÚNG 1 ACCOUNTABLE (A)**, tách biệt vai trò rõ ràng.
+
