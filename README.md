@@ -2,8 +2,7 @@
 
 - Team: **Team A**
 - Thành viên:
-  1. **Thân Thị Kim Chi** — MHV: **2A202602797** (AI Builder & Project Lead)
-- Tên dự án: **SmartClaim AI**
+  1. **Thân Thị Kim Chi** — MHV: **2A202602797**
 
 ## Bài nộp
 
