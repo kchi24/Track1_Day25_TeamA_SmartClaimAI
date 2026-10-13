@@ -1,8 +1,19 @@
-# Track 1 - Day 27 — AI Team Lab: Từ Stakeholder đến Team Health & Growth Plan
-**Repository chính thức của Team HTK**  
-*Thời gian thực hiện: 120 phút | Đội ngũ: Team HTK*
+# Track 1 - Day 25 — AI Team Lab
+
+- Team: Team HTK
+- Thành viên (3–5 người):
+  1. Nguyễn Minh Hoàng — AI Engineer & Model Optimization Lead
+  2. Trần Anh Tuấn — Product Lead & Solution Architect (Trưởng nhóm)
+  3. Lê Quốc Khánh — Data & Fullstack Backend Engineer
+- Tên dự án: SmartClaim AI
+- Link sản phẩm/demo (nếu có): https://github.com/TeamHTK/Track1_Day25_TeamHTK_SmartClaimAI
+
+## Bài nộp
+
+File: `Day25_AI-Team-Lab_TeamHTK.pdf`
 
 ---
+
 
 ## 📌 Phase 0 — Chốt phạm vi & Cách làm (Scope & Ground Rules)
 
