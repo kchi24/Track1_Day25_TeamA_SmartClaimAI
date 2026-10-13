@@ -4,11 +4,11 @@
 - Thành viên:
   1. **Thân Thị Kim Chi** — MHV: **2A202602797** (Solo Founder & Fullstack AI Builder)
 - Tên dự án: **SmartClaim AI**
-- Link sản phẩm/demo (nếu có): https://github.com/kimchi-ai/Track1_Day25_TeamChi_SmartClaimAI
+- Link sản phẩm/demo (nếu có): https://github.com/kimchi-ai/Track1_Day25_TeamA_SmartClaimAI
 
 ## Bài nộp
 
-File: `Day25_AI-Team-Lab_TeamChi.pdf`
+File: `Day25_AI-Team-Lab_TeamA.pdf`
 
 ---
 
@@ -30,7 +30,7 @@ File: `Day25_AI-Team-Lab_TeamChi.pdf`
 | **2** | **Tên dự án AI** | **SmartClaim AI** — Hệ thống AI tự động hóa trích xuất dữ liệu bệnh án & thẩm định sơ bộ hồ sơ bồi thường bảo hiểm sức khỏe (Health Insurance Claims Automation using OCR + Multi-modal RAG). |
 | **3** | **Mục tiêu 1–3 tháng tới** | • Đạt độ chính xác trích xuất hóa đơn viện phí / toa thuốc > 92% trên tập 300 mẫu thực tế.<br>• Giảm thời gian xử lý hồ sơ thẩm định sơ bộ từ 25 phút xuống < 3 phút/hồ sơ.<br>• Hoàn thành bản MVP thử nghiệm Pilot thành công với 1 công ty bảo hiểm đối tác (hoặc bộ phận Claims nội bộ 15 nhân viên). |
 | **4** | **Trưởng nhóm / Repo Owner** | **Thân Thị Kim Chi** (chịu trách nhiệm toàn diện khởi tạo repo, quản lý code, artefact và nộp bài). |
-| **5** | **Format bài nộp** | GitHub Repository (`README.md`) + File Báo cáo tổng hợp PDF 4 trang (`Day25_AI-Team-Lab_TeamChi.pdf`). |
+| **5** | **Format bài nộp** | GitHub Repository (`README.md`) + File Báo cáo tổng hợp PDF 4 trang (`Day25_AI-Team-Lab_TeamA.pdf`). |
 
 > **GATE 0 PASS**: Đã xác định rõ ràng phạm vi dự án SmartClaim AI, mục tiêu 1–3 tháng đo lường được và có Thân Thị Kim Chi chịu trách nhiệm duy nhất tổng hợp và nộp bài.
 
@@ -272,9 +272,9 @@ Cam kết **3 hành động cụ thể có chủ sở hữu (Owner), hạn chót
 
 ### 2. Thông tin bàn giao Repository & File Báo cáo Nộp bài
 
-* **Tên Repository chính thức**: `Track1_Day25_TeamChi_SmartClaimAI`
+* **Tên Repository chính thức**: `Track1_Day25_TeamA_SmartClaimAI`
 * **Người nộp bài**: **Thân Thị Kim Chi** (MHV: **2A202602797**)
-* **File báo cáo xuất xưởng PDF (Tối đa đúng 4 trang)**: [`Day25_AI-Team-Lab_TeamChi.pdf`](file:///d:/Track1_Day25_TeamHTK_/Day25_AI-Team-Lab_TeamChi.pdf)
+* **File báo cáo xuất xưởng PDF (Tối đa đúng 4 trang)**: [`Day25_AI-Team-Lab_TeamA.pdf`](file:///d:/Track1_Day25_TeamHTK_/Day25_AI-Team-Lab_TeamA.pdf)
   - *Trang 1*: Stakeholder Map & 4 Chiến lược hành động ưu tiên
   - *Trang 2*: Pitch "Kết luận trước", Xử lý phản biện & RACI Matrix
   - *Trang 3*: Thiết kế AI Team & Priority Resourcing (Hire/Outsource/Partner)
@@ -284,7 +284,7 @@ Cam kết **3 hành động cụ thể có chủ sở hữu (Owner), hạn chót
 
 > **GATE 5 PASS — REPOSITORY & BÁO CÁO ĐÃ SẴN SÀNG NỘP**:
 > - Repository có đầy đủ cấu trúc chuẩn chỉnh trong `README.md`.
-> - Đã xuất thành công file PDF báo cáo tối đa 4 trang `Day25_AI-Team-Lab_TeamChi.pdf` ngay tại thư mục gốc.
+> - Đã xuất thành công file PDF báo cáo tối đa 4 trang `Day25_AI-Team-Lab_TeamA.pdf` ngay tại thư mục gốc.
 > - Toàn bộ 4 Artefact có tính nhất quán cao, đáp ứng 100% tiêu chí của tất cả các Gate (Gate 0 đến Gate 5).
 
 ---
