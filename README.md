@@ -345,6 +345,26 @@ Team thống nhất **3 hành động cụ thể, có chủ sở hữu (Owner), 
 > - Đã xuất thành công file PDF báo cáo tối đa 4 trang `Day25_AI-Team-Lab_TeamHTK.pdf` ngay tại thư mục gốc.
 > - Toàn bộ 4 Artefact có tính nhất quán cao, đáp ứng 100% tiêu chí của tất cả các Gate (Gate 0 đến Gate 5).
 
+---
+
+## 🛡️ Tuyên bố Tuân thủ Quy tắc dùng AI trong Lab (AI Ethics & Compliance)
+
+Đội ngũ **Team HTK** cam kết tuân thủ nghiêm túc 100% quy tắc sử dụng AI theo hướng dẫn của giảng viên:
+
+### 1. Phạm vi ứng dụng AI hỗ trợ hợp lệ (What was leveraged):
+* ✅ **Mở rộng góc nhìn Stakeholder**: Dùng AI để rà soát các bên liên quan dễ bị bỏ sót trong chuỗi giá trị bảo hiểm y tế (bổ sung vị trí *Head of Compliance* để xử lý bài toán Nghị định 13/2023/NĐ-CP và *CIO* để giải tỏa rủi ro Core Insurance).
+* ✅ **Tối ưu cấu trúc Pitch "Conclusion First"**: Tinh chỉnh thông điệp ngắn gọn, trực diện, loại bỏ văn phong dài dòng, tập trung vào kết luận và Small Ask.
+* ✅ **Kiểm định tính chặt chẽ của RACI**: Rà soát tính logic, đảm bảo nguyên tắc vàng **"Mỗi hàng chỉ có đúng 1 Accountable (A) duy nhất"** và tách bạch rõ vai trò R và A.
+* ✅ **Tư vấn cấu trúc AI Team & Nguồn lực**: Tham chiếu mô hình *Embedded AI Pod* phù hợp với quy mô nhóm 3 thành viên, tư vấn giải pháp *Priority Resourcing* thông minh (Partner/Outsource/Hire) thay vì rập khuôn tuyển dụng.
+* ✅ **Chuyển hóa Team Health thành Actionable Plan**: Biến các nhận định trừu tượng về sức khỏe nhóm thành các hành động đo lường được kèm deadline cụ thể.
+
+### 2. Cam kết tuyệt đối không vi phạm (What was strictly avoided):
+* 🚫 **Không bịa stakeholder ảo**: Toàn bộ 7 stakeholder đều tương ứng với các vị trí vận hành và thẩm định có thật trong quy trình xử lý hồ sơ bồi thường bảo hiểm.
+* 🚫 **Không bịa số liệu quá đà / hứa hẹn viển vông**: Mọi cam kết hiệu năng (92.4% Exact Match, 1m48s/hồ sơ) đều đi kèm giải pháp kỹ thuật phòng vệ *Human-in-the-Loop* và *Confidence Threshold 88%*, không cam kết tự động hóa 100% vô căn cứ.
+* 🚫 **Không vẽ cơ cấu tổ chức "đẹp trên giấy"**: Không sao chép mô hình phòng ban đồ sộ của tập đoàn lớn; toàn bộ trách nhiệm gắn chặt vào năng lực thực tế của 3 thành viên Hoàng, Tuấn, Khánh.
+* 🚫 **Không viết Growth Plan chung chung**: Loại bỏ hoàn toàn các khẩu hiệu sáo rỗng như "cần cố gắng hơn", thay bằng các deliverables kỹ thuật có thể verify được (Script `eval_pipeline.py`, Staging Web Sandbox, Weekly Review 25 phút).
+
+
 
 
 
