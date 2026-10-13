@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Track 1 - Day 27: AI Team Lab - Team HTK</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 10mm 12mm;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    line-height: 1.35;
+    background: #fff;
+  }
+  .page {
+    width: 100%;
+    height: 277mm; /* Exactly fits A4 minus margins */
+    max-height: 277mm;
+    page-break-after: always;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .page:last-child {
+    page-break-after: avoid;
+  }
+  .content {
+    flex: 1;
+  }
+  .header {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 16px;
+    color: #1e3a8a;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .header .badge {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  .footer {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 4px;
+    font-size: 9px;
+    color: #64748b;
+    display: flex;
+    justify-content: space-between;
+  }
+  h2 {
+    font-size: 12.5px;
+    margin: 6px 0 4px 0;
+    color: #0f172a;
+    border-left: 3.5px solid #2563eb;
+    padding-left: 6px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 11px;
+    margin: 4px 0 2px 0;
+    color: #1e40af;
+  }
+  p {
+    margin: 2px 0 4px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 4px 0 6px 0;
+    font-size: 10px;
+  }
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 4px 6px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+  }
+  .highlight-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin: 4px 0;
+  }
+  .tag {
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: 700;
+  }
+  .tag-champion { background: #dcfce7; color: #15803d; }
+  .tag-blocker { background: #fee2e2; color: #b91c1c; }
+  .tag-supporter { background: #e0f2fe; color: #0369a1; }
+  .tag-bystander { background: #f1f5f9; color: #475569; }
+  .tag-support { background: #dcfce7; color: #166534; }
+  .tag-neutral { background: #fef3c7; color: #92400e; }
+  .tag-oppose { background: #fee2e2; color: #991b1b; }
+  .matrix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin: 4px 0 6px 0;
+  }
+  .matrix-card {
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 5px 7px;
+    font-size: 9.5px;
+  }
+  .matrix-card.champion { background: #f0fdf4; border-color: #86efac; }
+  .matrix-card.blocker { background: #fef2f2; border-color: #fca5a5; }
+  .matrix-card.supporter { background: #f0f9ff; border-color: #7dd3fc; }
+  .matrix-card.bystander { background: #f8fafc; border-color: #cbd5e1; }
+  .matrix-title { font-weight: 800; margin-bottom: 3px; font-size: 10px; }
+  .raci-table th, .raci-table td { text-align: center; }
+  .raci-table td:nth-child(2) { text-align: left; }
+  .bold { font-weight: 700; }
+  .text-danger { color: #dc2626; font-weight: 700; }
+  .text-success { color: #16a34a; font-weight: 700; }
+  .quote-box {
+    border-left: 3px solid #2563eb;
+    background: #eff6ff;
+    padding: 5px 8px;
+    font-style: italic;
+    margin: 4px 0;
+    font-size: 10.5px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== TRANG 1 ==================== -->
+<div class="page">
+  <div class="content">
+    <div class="header">
+      <div>
+        <h1>Track 1 - Day 27 · AI Team Lab: Stakeholder Map & Strategy</h1>
+        <div style="font-size: 10px; color: #475569; margin-top: 2px;">
+          <strong>Dự án:</strong> SmartClaim AI | <strong>Team HTK:</strong> Nguyễn Minh Hoàng, Trần Anh Tuấn (Lead), Lê Quốc Khánh
+        </div>
+      </div>
+      <div class="badge">Artefact 1 — Trang 1 / 4</div>
+    </div>
+
+    <div class="highlight-box" style="margin-bottom: 6px;">
+      <strong>Mục tiêu 1–3 tháng:</strong> Triển khai MVP SmartClaim AI (Multi-modal RAG & OCR) tự động bóc tách dữ liệu hồ sơ bồi thường viện phí; đạt độ chính xác >92%, rút ngắn thời gian xử lý từ 25 phút còn &lt;3 phút/hồ sơ; hoàn thành Pilot nội bộ với 200 hồ sơ claim.
+    </div>
+
+    <h2>1. Ma trận Stakeholder (Influence × Interest) & Stance thực tế</h2>
+    <div class="matrix-grid">
+      <div class="matrix-card blocker">
+        <div class="matrix-title" style="color: #991b1b;">BLOCKER (Influence Cao × Interest Thấp) — Giữ hài lòng, gỡ mối lo</div>
+        • <strong>Bà Đỗ Thu Hà</strong> (Head of Compliance & Bảo mật) — Stance: <span class="tag tag-oppose">Chưa ủng hộ</span><br>
+        <em>Mối bận tâm:</em> Rủi ro vi phạm Nghị định 13/2023/NĐ-CP về dữ liệu PII y tế nhạy cảm.<br>
+        • <strong>Ông Lê Quang Minh</strong> (Giám đốc CNTT / CIO) — Stance: <span class="tag tag-neutral">Trung lập</span><br>
+        <em>Mối bận tâm:</em> Sợ can thiệp trực tiếp làm treo hệ thống Core Insurance cũ kỹ.
+      </div>
+      <div class="matrix-card champion">
+        <div class="matrix-title" style="color: #166534;">CHAMPION (Influence Cao × Interest Cao) — Đồng hành chặt chẽ</div>
+        • <strong>Ông Trần Hùng</strong> (Giám đốc Vận hành Bồi thường) — Stance: <span class="tag tag-support">Ủng hộ mạnh</span><br>
+        <em>Mối bận tâm:</em> Giải tỏa quá tải cuối năm (+40%), cắt giảm thời gian chờ bồi thường.<br>
+        • <strong>TS. Nguyễn Việt Khoa</strong> (Tech Mentor / Giảng viên) — Stance: <span class="tag tag-support">Ủng hộ</span><br>
+        <em>Mối bận tâm:</em> Kiến trúc Multi-modal RAG chống ảo giác, chuẩn hóa benchmark.
+      </div>
+      <div class="matrix-card bystander">
+        <div class="matrix-title" style="color: #475569;">BYSTANDER (Influence Thấp × Interest Thấp) — Theo dõi định kỳ</div>
+        • <strong>Đại lý bảo hiểm (Agents)</strong> — Stance: <span class="tag tag-neutral">Trung lập</span><br>
+        <em>Mối bận tâm:</em> Khách hàng được giải quyết bồi thường êm đẹp để dễ tái tục hợp đồng.
+      </div>
+      <div class="matrix-card supporter">
+        <div class="matrix-title" style="color: #0369a1;">SUPPORTER (Influence Thấp × Interest Cao) — Khai thác feedback</div>
+        • <strong>Chị Vũ Mai Phương</strong> (Chuyên viên thẩm định cấp cao) — Stance: <span class="tag tag-support">Ủng hộ</span><br>
+        <em>Mối bận tâm:</em> Giảm tải việc gõ tay chứng từ viện phí và đọc toa thuốc mờ.<br>
+        • <strong>Khách hàng nộp Claim</strong> (End-users) — Stance: <span class="tag tag-support">Ủng hộ</span> (muốn duyệt chi 24h).
+      </div>
+    </div>
+
+    <h2>2. Bốn Stakeholder ưu tiên & Kế hoạch hành động cụ thể (1–2 tuần tới)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 23%;">Stakeholder & Stance</th>
+          <th style="width: 25%;">Họ quan tâm điều gì?</th>
+          <th style="width: 24%;">Tác động (Giúp / Cản trở)</th>
+          <th style="width: 28%;">Hành động cụ thể (Action + Deadline)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Ông Trần Hùng</strong><br><em>Head of Claims</em><br><span class="tag tag-champion">Champion</span> <span class="tag tag-support">Ủng hộ</span></td>
+          <td>Tỷ lệ tự động hóa claim ngoại trú; giảm backlog mùa cao điểm; giảm chi phí vận hành.</td>
+          <td><strong>Giúp:</strong> Cấp 200 hồ sơ lịch sử và duyệt môi trường chạy Pilot.<br><strong>Cản:</strong> Hủy dự án nếu demo sai sót logic.</td>
+          <td><strong>Trước 17h thứ Sáu (17/10):</strong> Gửi demo bóc tách 30 toa thuốc y tế + báo cáo đối soát thời gian xử lý (từ 25p còn 1m48s) để chốt lịch kick-off Pilot.</td>
+        </tr>
+        <tr>
+          <td><strong>2. TS. Nguyễn Việt Khoa</strong><br><em>Tech Mentor</em><br><span class="tag tag-champion">Champion</span> <span class="tag tag-support">Ủng hộ</span></td>
+          <td>Tính ổn định thuật toán OCR tiếng Việt viết tay; cơ chế RAG giảm thiểu hallucination.</td>
+          <td><strong>Giúp:</strong> Review kiến trúc mô hình và kết nối chuyên gia y tế thẩm định ruleset.</td>
+          <td><strong>Trước 20h thứ Tư (15/10):</strong> Họp 1-on-1 45 phút, trình bày pipeline xử lý hóa đơn bảng biểu phức tạp và thống nhất bộ metrics (F1, Exact Match).</td>
+        </tr>
+        <tr>
+          <td><strong>3. Bà Đỗ Thu Hà</strong><br><em>Compliance Officer</em><br><span class="tag tag-blocker">Blocker</span> <span class="tag tag-oppose">Chưa ủng hộ</span></td>
+          <td>Bảo mật dữ liệu y tế; tuân thủ Nghị định 13/2023/NĐ-CP; chống lộ PII lên Cloud công cộng.</td>
+          <td><strong>Cản trở:</strong> Dùng quyền phủ quyết (veto) chặn đưa dữ liệu thật vào thử nghiệm Pilot.</td>
+          <td><strong>Trước 10h thứ Ba (21/10):</strong> Gửi tài liệu <em>"Data Masking Plan"</em> chứng minh: toàn bộ PII (tên, CCCD, viện phí) được ẩn danh on-premise trước khi qua AI.</td>
+        </tr>
+        <tr>
+          <td><strong>4. Ông Lê Quang Minh</strong><br><em>CIO / IT Lead Core</em><br><span class="tag tag-blocker">Blocker</span> <span class="tag tag-neutral">Trung lập</span></td>
+          <td>Độ ổn định hệ thống Core Insurance; không phát sinh gánh nặng bảo trì API cho IT nội bộ.</td>
+          <td><strong>Cản trở:</strong> Chậm trễ cấp quyền truy cập Sandbox API tích hợp webhook bồi thường.</td>
+          <td><strong>Trước 15h thứ Năm (23/10):</strong> Họp kỹ thuật 30 phút, cam kết mô hình Loose Coupling qua Async Webhook & S3, không chọc DB Core.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer">
+    <span>Track 1 - Day 27 — AI Team Lab | Dự án: SmartClaim AI</span>
+    <span>Trang 1 / 4 — Gate 1 Passed</span>
+  </div>
+</div>
+
+<!-- ==================== TRANG 2 ==================== -->
+<div class="page">
+  <div class="content">
+    <div class="header">
+      <div>
+        <h1>Pitch "Kết luận trước" & RACI Matrix</h1>
+        <div style="font-size: 10px; color: #475569; margin-top: 2px;">
+          <strong>Đối tượng Pitch:</strong> Ông Trần Hùng (Head of Claims) | <strong>Quy tắc RACI:</strong> Đúng 1 Accountable (A) duy nhất / dòng
+        </div>
+      </div>
+      <div class="badge">Artefact 2 — Trang 2 / 4</div>
+    </div>
+
+    <h2>1. Bản Pitch "Kết luận trước" (Conclusion First) gửi Head of Claims</h2>
+    <div class="highlight-box">
+      <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af; font-size: 11px;">[KẾT LUẬN / ĐỀ XUẤT]:</strong> Team đề xuất triển khai <strong>chương trình Pilot nội bộ 3 tuần giải pháp SmartClaim AI trên 200 hồ sơ claim ngoại trú</strong>, nhằm tự động hóa 80% công đoạn bóc tách chứng từ và <strong>rút ngắn thời gian thẩm định sơ bộ từ 25 phút xuống dưới 3 phút/hồ sơ</strong>, không thay đổi quy trình phê duyệt tài chính hiện hữu.</p>
+      
+      <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">[LÝ DO VÌ SAO NÊN QUAN TÂM]:</strong><br>
+      1. <em>Giải tỏa quá tải cao điểm:</em> Cuối năm hồ sơ tăng 40%, đội ngũ 15 chuyên viên không thể mở rộng thủ công mà không phát sinh sai sót.<br>
+      2. <em>Tăng NPS & Tỷ lệ tái tục:</em> Rút ngắn thời gian giải ngân bồi thường từ 5–7 ngày xuống còn 24h tạo lợi thế cạnh tranh bán lẻ vượt trội.<br>
+      3. <em>Chống thất thoát:</em> AI tự động đối soát chéo số tiền từng dòng viện phí với hóa đơn đỏ, triệt tiêu 100% lỗi tính toán do mỏi mắt.</p>
+
+      <p style="margin: 0 0 4px 0;"><strong style="color: #1e40af;">[BẰNG CHỨNG & DEMO]:</strong><br>
+      • Benchmark trên 100 hóa đơn viện phí/toa thuốc thật đạt độ chính xác <strong>92.4% Exact Match</strong> các trường thông tin then chốt.<br>
+      • Demo thực tế xử lý trọn gói bộ 5 trang chứng từ chỉ mất <strong>1 phút 48 giây</strong> (nhanh hơn gấp 10 lần so với 22 phút nhập tay của chuyên viên).<br>
+      • Tỷ lệ phát hiện sai lệch số tiền giữa Bảng kê chi phí và Hóa đơn tài chính đạt <strong>100%</strong>.</p>
+
+      <p style="margin: 0;"><strong style="color: #1e40af;">[SMALL ASK — HÀNH ĐỘNG NHỎ TIẾP THEO]:</strong> Kính xin anh Hùng cử <strong>02 chuyên viên thẩm định tham gia buổi Demo 30 phút vào 15h thứ Năm tuần này (16/10)</strong> và phê duyệt cấp bộ <strong>200 hồ sơ lịch sử ẩn danh</strong> để team chạy kiểm thử mù đối chiếu.</p>
+    </div>
+
+    <h2>2. Xử lý phản biện gay gắt & Giảm thiểu rủi ro (Risk Mitigation)</h2>
+    <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 4px; padding: 5px 8px; margin-bottom: 6px;">
+      <strong class="text-danger">Phản biện từ Stakeholder:</strong> <em>"Toa thuốc chữ bác sĩ ngoằn ngoèo, bảng kê mỗi viện một kiểu. Nếu AI đọc sai tên thuốc, sai tiền (hallucination) mà tự duyệt bồi thường thì công ty bảo hiểm thất thoát hàng trăm triệu!"</em><br>
+      <strong class="text-success">Giải pháp kỹ thuật & Rào chắn an toàn:</strong><br>
+      1. <strong>Human-in-the-Loop (Không tự duyệt chi):</strong> AI chỉ là Copilot tiền thẩm định trích xuất thông tin, quyền phê duyệt chi tiền 100% thuộc thẩm định viên.<br>
+      2. <strong>Confidence Score & Visual Bounding Box:</strong> Trường nào có độ tự tin &lt;88% sẽ tự động highlight vàng kèm cắt lớp chứng từ gốc bên cạnh để người kiểm tra xác nhận trong 3 giây thay vì gõ lại.<br>
+      3. <strong>Deterministic Rule Engine:</strong> Tổng tiền các dòng viện phí bắt buộc khớp 100% với Hóa đơn đỏ; lệch 1 đồng lập tức chặn lại và cảnh báo.
+    </div>
+
+    <h2>3. RACI Matrix (6 Công việc trọng tâm trong 1–2 tháng tới)</h2>
+    <table class="raci-table">
+      <thead>
+        <tr>
+          <th style="width: 6%;">STT</th>
+          <th style="width: 44%; text-align: left;">Công việc quan trọng (1–2 tháng tới)</th>
+          <th style="width: 12%;">Product Lead<br>(Anh Tuấn)</th>
+          <th style="width: 12%;">AI Engineer<br>(Minh Hoàng)</th>
+          <th style="width: 12%;">Data/Backend<br>(Quốc Khánh)</th>
+          <th style="width: 14%;">Stakeholder<br>(Claims/Legal)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td style="text-align: left;"><strong>Xác định Use case & Quy tắc nghiệp vụ thẩm định</strong></td>
+          <td class="bold">A</td>
+          <td>C</td>
+          <td>C</td>
+          <td><strong>R</strong> (Trần Hùng)</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td style="text-align: left;"><strong>Thu thập, làm sạch & Ẩn danh hóa dữ liệu PII y tế</strong></td>
+          <td>C</td>
+          <td>C</td>
+          <td class="bold">A / R</td>
+          <td><strong>C</strong> (Đỗ Thu Hà)</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td style="text-align: left;"><strong>Xây dựng Pipeline Multi-modal RAG & Tối ưu OCR</strong></td>
+          <td>C</td>
+          <td class="bold">A / R</td>
+          <td>R</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td style="text-align: left;"><strong>Kiểm thử chất lượng & Benchmark chống sai lệch</strong></td>
+          <td class="bold">A</td>
+          <td>R</td>
+          <td>R</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td style="text-align: left;"><strong>Triển khai thử nghiệm Pilot nội bộ trên 200 hồ sơ</strong></td>
+          <td class="bold">A</td>
+          <td>R</td>
+          <td>R</td>
+          <td><strong>C</strong> (2 Thẩm định viên)</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td style="text-align: left;"><strong>Nghiệm thu kết quả Pilot & Quyết định Release</strong></td>
+          <td>R</td>
+          <td>I</td>
+          <td>I</td>
+          <td><strong class="text-danger">A</strong> (Trần Hùng)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="font-size: 9.5px; color: #475569; margin-top: 2px;">
+      <em>*Ghi chú RACI:</em> Đảm bảo nguyên tắc mỗi hàng chỉ có đúng 1 Accountable (A) duy nhất. Tách bạch người thực hiện (R) và người chịu trách nhiệm cuối cùng (A).
+    </div>
+  </div>
+  <div class="footer">
+    <span>Track 1 - Day 27 — AI Team Lab | Dự án: SmartClaim AI</span>
+    <span>Trang 2 / 4 — Gate 2 Passed</span>
+  </div>
+</div>
+
+<!-- ==================== TRANG 3 ==================== -->
+<div class="page">
+  <div class="content">
+    <div class="header">
+      <div>
+        <h1>Thiết kế AI Team & Priority Resourcing</h1>
+        <div style="font-size: 10px; color: #475569; margin-top: 2px;">
+          <strong>Mô hình:</strong> Embedded AI Team (Cross-functional Squad) | <strong>Chiến lược:</strong> Tối ưu nguồn lực Hire / Outsource / Partner
+        </div>
+      </div>
+      <div class="badge">Artefact 3 — Trang 3 / 4</div>
+    </div>
+
+    <h2>1. Lựa chọn AI Team Architecture: Embedded Team Pod</h2>
+    <div class="highlight-box">
+      <strong>Lý do lựa chọn:</strong> Đội ngũ hiện tại gồm 3 thành viên đang phát triển sản phẩm SmartClaim AI từ PoC sang Pilot (giai đoạn 0 lên 1). Mô hình <strong>Embedded AI Pod</strong> nhúng trực tiếp kỹ sư AI, Data và Product vào chung một squad thống nhất. Điều này loại bỏ ma sát giao tiếp liên phòng ban, duy trì <em>daily feedback loop &lt; 24h</em> giữa mô hình AI và luồng nghiệp vụ thẩm định, tiết kiệm tối đa chi phí quản lý so với mô hình Centralized hay Hybrid cồng kềnh.
+    </div>
+
+    <h2>2. Phân định Core Roles (Cần ngay) & Extended Roles (Bổ sung khi scale)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">Vai trò</th>
+          <th style="width: 20%;">Phân loại</th>
+          <th style="width: 55%;">Trách nhiệm chính đối với sản phẩm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AI Product & Solution Lead</strong><br>(Trần Anh Tuấn)</td>
+          <td><span class="tag tag-champion">Core (Hiện tại)</span></td>
+          <td>Quản trị Product Vision, Roadmap Pilot; chuyển hóa nghiệp vụ bảo hiểm thành đặc tả kỹ thuật; thiết kế luồng Human-in-the-Loop UX; chịu trách nhiệm đo lường Touch Rate.</td>
+        </tr>
+        <tr>
+          <td><strong>AI & Model Engineer</strong><br>(Nguyễn Minh Hoàng)</td>
+          <td><span class="tag tag-champion">Core (Hiện tại)</span></td>
+          <td>Phát triển pipeline Multi-modal OCR y tế tiếng Việt kết hợp VLM; thiết kế kiến trúc Multi-modal RAG trích xuất JSON Schema; xây dựng guardrails chống ảo giác và tính Confidence Score.</td>
+        </tr>
+        <tr>
+          <td><strong>Data & Backend Engineer</strong><br>(Lê Quốc Khánh)</td>
+          <td><span class="tag tag-champion">Core (Hiện tại)</span></td>
+          <td>Xây dựng module làm sạch và ẩn danh hóa PII (Nghị định 13) on-premise; thiết kế hệ thống RESTful API / Async Webhook tốc độ cao kết nối Portal; quản trị cơ sở dữ liệu và sandbox.</td>
+        </tr>
+        <tr>
+          <td><strong>MLOps & Evals Engineer</strong></td>
+          <td><span class="tag tag-bystander">Extended (Khi scale)</span></td>
+          <td>Tự động hóa CI/CD cho model, quản lý hạ tầng GPU, theo dõi data/model drift và tự động chạy regression test định kỳ khi khối lượng bồi thường tăng vọt.</td>
+        </tr>
+        <tr>
+          <td><strong>Healthcare Domain Auditor</strong></td>
+          <td><span class="tag tag-bystander">Extended (Khi scale)</span></td>
+          <td>Bác sĩ/chuyên viên giám định chuyên trách rà soát danh mục thuốc BHYT, chuẩn hóa quy tắc biệt dược và mã ICD-10 phức tạp.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Priority Resourcing: Giải pháp bổ sung Capability Gap thực tế</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 24%;">Capability Gap (Thiếu)</th>
+          <th style="width: 16%;">Phương án</th>
+          <th style="width: 42%;">Lý do lựa chọn (Không rập khuôn tuyển dụng)</th>
+          <th style="width: 18%;">Hạn chót (Deadline)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Chuyên môn Y tế & Dược học</strong><br><em>(Medical ICD-10 & Toa thuốc)</em></td>
+          <td><strong style="color: #2563eb;">PARTNER</strong><br>(Hợp tác chuyên gia)</td>
+          <td>Giai đoạn MVP tuyển bác sĩ full-time là cực kỳ lãng phí. Hợp tác cố vấn theo giờ với 01 Bác sĩ / Cố vấn giám định độc lập để chuẩn hóa ruleset thẩm định là nhanh và tối ưu chi phí nhất.</td>
+          <td><strong>Trước 25/10/2026</strong><br>(2 tuần trước Pilot)</td>
+        </tr>
+        <tr>
+          <td><strong>Gán nhãn dữ liệu OCR y tế</strong><br><em>(Annotation 2.000 mẫu hóa đơn)</em></td>
+          <td><strong style="color: #d97706;">OUTSOURCE</strong><br>(Thuê ngoài chuyên biệt)</td>
+          <td>Gán nhãn bounding box hóa đơn tốn hàng trăm giờ thủ công. Thuê ngoài agency chuyên nghiệp (kèm hợp đồng NDA bảo mật) giúp tiết kiệm 70% chi phí và hoàn thành trong 1 tuần thay vì để AI Engineer làm.</td>
+          <td><strong>Trước 05/11/2026</strong><br>(Sprint 2 mở rộng test)</td>
+        </tr>
+        <tr>
+          <td><strong>MLOps & Continuous Evals</strong><br><em>(Giám sát tự động khi Golive)</em></td>
+          <td><strong style="color: #16a34a;">HIRE</strong><br>(Tuyển dụng khi scale)</td>
+          <td>Khi hệ thống vận hành hàng nghìn đơn/ngày trên Production, rủi ro model drift cần một kỹ sư MLOps chuyên trách quản lý hạ tầng GPU và rollback tự động.</td>
+          <td><strong>Tháng 12/2026</strong><br>(Sau khi Pilot thành công)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Squad Goal</h2>
+    <div class="quote-box">
+      <strong>"Squad của chúng tôi sở hữu toàn bộ giải pháp xử lý chứng từ bảo hiểm tự động (SmartClaim Core Engine) và chịu trách nhiệm đưa tỷ lệ trích xuất chính xác hồ sơ bồi thường từ 92.4% lên >95% và rút ngắn thời gian thẩm định sơ bộ từ 25 phút xuống dưới 3 phút/hồ sơ trong 60 ngày tới."</strong>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Track 1 - Day 27 — AI Team Lab | Dự案: SmartClaim AI</span>
+    <span>Trang 3 / 4 — Gate 3 Passed</span>
+  </div>
+</div>
+
+<!-- ==================== TRANG 4 ==================== -->
+<div class="page">
+  <div class="content">
+    <div class="header">
+      <div>
+        <h1>Đánh giá Team Health & Growth Plan 30 ngày</h1>
+        <div style="font-size: 10px; color: #475569; margin-top: 2px;">
+          <strong>Khung năng lực:</strong> Competency L1/L2/L3 | <strong>Kế hoạch 30 ngày:</strong> Hành động rõ Owner + Deadline + Tiêu chí
+        </div>
+      </div>
+      <div class="badge">Artefact 4 — Trang 4 / 4</div>
+    </div>
+
+    <h2>1. Bảng tự chấm điểm Team Health cá nhân (Thang điểm 1–5)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 34%;">Khía cạnh đánh giá</th>
+          <th style="width: 22%;">Nguyễn Minh Hoàng<br>(AI Engineer)</th>
+          <th style="width: 22%;">Trần Anh Tuấn<br>(Product Lead)</th>
+          <th style="width: 22%;">Lê Quốc Khánh<br>(Data/Backend)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Chất lượng AI</strong> (Output ổn định, ít ảo giác)</td>
+          <td style="text-align: center;">4 / 5</td>
+          <td style="text-align: center; color: #b91c1c; font-weight: bold;">3 / 5</td>
+          <td style="text-align: center;">4 / 5</td>
+        </tr>
+        <tr>
+          <td><strong>2. Tiến độ</strong> (Hoàn thành đúng cam kết sprint)</td>
+          <td style="text-align: center;">3 / 5</td>
+          <td style="text-align: center;">3 / 5</td>
+          <td style="text-align: center;">4 / 5</td>
+        </tr>
+        <tr>
+          <td><strong>3. Tinh thần team</strong> (Minh bạch, dám nói thẳng, gắn kết)</td>
+          <td style="text-align: center;">5 / 5</td>
+          <td style="text-align: center;">5 / 5</td>
+          <td style="text-align: center;">4 / 5</td>
+        </tr>
+        <tr>
+          <td><strong>4. Tốc độ ra sản phẩm</strong> (Từ ý tưởng/code đến demo)</td>
+          <td style="text-align: center; color: #b91c1c; font-weight: bold;">3 / 5</td>
+          <td style="text-align: center; color: #b91c1c; font-weight: bold;">2 / 5</td>
+          <td style="text-align: center; color: #b91c1c; font-weight: bold;">3 / 5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box" style="margin: 4px 0;">
+      • <strong>Điểm thấp nhất:</strong> <em>Tốc độ ra sản phẩm (TB: 2.67/5)</em> — Tinh chỉnh model mất 3-4 ngày mới đẩy lên môi trường demo cho người dùng test.<br>
+      • <strong>Điểm chênh lệch nhất:</strong> <em>Chất lượng AI (Hoàng 4/5 vs Tuấn 3/5)</em> — Kỹ sư nhìn theo benchmark phòng lab (92.4%), Product nhìn theo ca thực tế bị mờ/nghiêng góc.<br>
+      • <strong>Vấn đề cốt lõi:</strong> <em>Thiếu hệ thống đánh giá tự động (Automated Evals Framework)</em> khiến mỗi lần sửa prompt phải test tay lại từ đầu, gây chậm trễ release.
+    </div>
+
+    <h2>2. Nâng cấp khung năng lực (Competency Framework L1/L2/L3)</h2>
+    <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 4px; padding: 5px 8px; margin-bottom: 6px;">
+      • <strong>Role:</strong> <strong>AI & Model Engineer (Nguyễn Minh Hoàng)</strong> | <strong>Level hiện tại:</strong> Gần <strong>L2 — AI Practitioner</strong>.<br>
+      • <strong>Competency cần nâng cấp:</strong> <strong>AI Evaluation & Automated Quality Benchmarking</strong> (Đánh giá chất lượng mô hình tự động) hướng tới chuẩn <strong>L3 — AI Builder</strong>.<br>
+      • <strong>Hành động thực hành 30 ngày:</strong> Xây dựng bộ <strong>50 "Golden Test Cases"</strong> bao phủ các ca khó thực tế y tế (hóa đơn mờ, toa viết tắt, bảng kê viện phí dài) và tích hợp pipeline tự động chạy kiểm thử hồi quy (automated evals) mỗi khi có commit mới.
+    </div>
+
+    <h2>3. Team Growth Plan 30 ngày (3 Hành động trọng tâm)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 22%;">Vấn đề ưu tiên</th>
+          <th style="width: 33%;">Hành động cụ thể trong 30 ngày</th>
+          <th style="width: 15%;">Owner</th>
+          <th style="width: 12%;">Deadline</th>
+          <th style="width: 18%;">Dấu hiệu hoàn thành</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Chất lượng AI & Evals</strong><br>(Thiếu đo lường tự động)</td>
+          <td>Xây dựng bộ <strong>50 Golden Cases</strong> (chuẩn hóa ground-truth); viết script tự động chạy đo F1-score và Exact Match sau mỗi lần đổi model/prompt.</td>
+          <td><strong>Minh Hoàng</strong><br>(AI Eng)</td>
+          <td><strong>28/10/2026</strong></td>
+          <td>Script `eval_pipeline.py` chạy &lt;5p, xuất báo cáo độ chính xác từng trường; cảnh báo đỏ nếu accuracy &lt;90%.</td>
+        </tr>
+        <tr>
+          <td><strong>2. Tốc độ ra sản phẩm</strong><br>(Nghẽn khâu triển khai demo)</td>
+          <td>Dựng môi trường <strong>Staging Web Sandbox nội bộ</strong> với tính năng kéo-thả ảnh chứng từ và hiển thị kết quả bóc tách trực quan trong 3 giây.</td>
+          <td><strong>Quốc Khánh</strong><br>(Backend)</td>
+          <td><strong>05/11/2026</strong></td>
+          <td>Web Sandbox nội bộ online; Product Lead và thẩm định viên tự upload test được ngay mà không cần dev hỗ trợ.</td>
+        </tr>
+        <tr>
+          <td><strong>3. Tiến độ & Phối hợp</strong><br>(Vướng mắc với Blocker)</td>
+          <td>Thiết lập lịch họp cố định <strong>Weekly Sprint Review & Blocker Clearing 25 phút lúc 16h30 thứ Sáu hàng tuần</strong>; cập nhật tương tác 4 stakeholder.</td>
+          <td><strong>Anh Tuấn</strong><br>(Product)</td>
+          <td><strong>17/10/2026</strong><br>(Duy trì 4w)</td>
+          <td>100% buổi họp có Action Log cụ thể; tỷ lệ hoàn thành cam kết sprint tăng từ 70% lên &gt;90%.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 4px 8px; margin-top: 4px; font-size: 9.5px;">
+      <strong>✅ TỔNG KẾT LAB:</strong> Đội ngũ Team HTK đã hoàn thành trọn vẹn 5 Phase, 4 Artefact có tính liên kết chặt chẽ từ Stakeholder Map, Pitch/RACI, AI Team Design đến Team Health & Growth Plan. Đã sẵn sàng nộp bài bằng link GitHub Repository!
+    </div>
+  </div>
+  <div class="footer">
+    <span>Track 1 - Day 27 — AI Team Lab | Dự án: SmartClaim AI</span>
+    <span>Trang 4 / 4 — Gate 4 & Gate 5 Passed</span>
+  </div>
+</div>
+
+</body>
+</html>

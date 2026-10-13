@@ -299,5 +299,52 @@ Team thống nhất **3 hành động cụ thể, có chủ sở hữu (Owner), 
 > - Đã nâng cấp năng lực cho AI Engineer theo khung L1/L2/L3 (từ L2 lên L3 ở mảng AI Evaluation).
 > - Growth Plan 30 ngày gồm đúng 3 hành động thực thi, có **Owner cụ thể, Deadline chính xác và Tiêu chí nghiệm thu định lượng**.
 
+---
+
+## 🔍 Phase 5 — Tự soi lỗi, Tính nhất quán & Hoàn thiện bài nộp (Trang tổng kết)
+
+### 1. Bảng kiểm tra tự soi lỗi 4 Artefact (Self-Audit Checklist)
+
+| Artefact | Tiêu chí kiểm tra theo bài giảng | Kết quả tự đánh giá | Minh chứng trong bài làm |
+|:---|:---|:---:|:---|
+| **Trang 1: Stakeholder Map & Chiến lược** | • Có ít nhất 6 stakeholder cụ thể (không ghi chung chung)?<br>• Đã map chuẩn theo trục Influence × Interest?<br>• Dùng đúng 4 quadrant (Champion/Blocker/Supporter/Bystander) và kiểm tra Stance thực tế?<br>• Đủ 4 hành động cụ thể cho 4 stakeholder ưu tiên? | **ĐẠT (PASS)** | • Xác định **7 stakeholder thực tế** kèm chức danh cụ thể.<br>• Phân bổ rõ ràng trên ma trận 2 trục.<br>• Ghi rõ Stance (Ủng hộ / Trung lập / Chưa ủng hộ) kèm lý giải.<br>• 4 hành động có **deadline, giờ giấc và sản phẩm bàn giao định lượng**. |
+| **Trang 2: Pitch & RACI Matrix** | • Pitch áp dụng cấu trúc Conclusion First (Kết luận trước)?<br>• Có số liệu/bằng chứng hỗ trợ thay vì hứa suông?<br>• Có Small Ask cụ thể, khả thi?<br>• Có 1 phản biện xác đáng nhất và giải pháp hạ tầng?<br>• Mỗi dòng trong RACI chỉ có **đúng 1 Accountable (A)**? | **ĐẠT (PASS)** | • Mở đầu bằng đề xuất Pilot 3 tuần trên 200 hồ sơ.<br>• Bằng chứng: **92.4% Exact Match, 1m48s/hồ sơ, 100% bắt lệch**.<br>• Small Ask: Demo 30 phút thứ Năm + 200 hồ sơ ẩn danh test mù.<br>• Phản biện về sai sót y khoa được giải quyết bằng Human-in-the-Loop, Confidence 88% và Rule Engine.<br>• Bảng 6 việc: **Mỗi hàng đúng 1 A duy nhất**, tách biệt R và A. |
+| **Trang 3: AI Team Architecture & Resourcing** | • Kiến trúc AI Team có giải thích vì sao phù hợp quy mô?<br>• Phân định rõ Core Roles (cần ngay) & Extended Roles?<br>• Có nhận diện Capability Gap rõ ràng?<br>• Priority Resourcing phân bổ đúng Hire / Outsource / Partner? | **ĐẠT (PASS)** | • Chọn **Embedded AI Team** (phù hợp team 3 người, feedback loop < 24h).<br>• Core: Product Lead, AI Engineer, Backend/Data; Extended: MLOps, Medical Auditor, AI Governance.<br>• 3 Gap: Y tế ➔ **Partner**; Gán nhãn ➔ **Outsource**; MLOps ➔ **Hire** khi scale. |
+| **Trang 4: Team Health & Growth Plan** | • Đủ 4 khía cạnh sức khỏe team (Chất lượng, Tiến độ, Tinh thần, Tốc độ)?<br>• Phân tích điểm thấp nhất và điểm chênh lệch?<br>• Chọn 1 competency nâng cấp theo L1/L2/L3?<br>• Kế hoạch 30 ngày có tối đa 3 hành động có Owner + Deadline + Tiêu chí? | **ĐẠT (PASS)** | • Đủ 4 khía cạnh với điểm trung bình của 3 thành viên.<br>• Chỉ ra điểm nghẽn: Tốc độ ra sản phẩm (2.67/5) và chênh lệch Chất lượng AI.<br>• Nâng cấp AI Engineer từ gần L2 lên L3 ở mảng AI Evaluation.<br>• Đúng 3 hành động: **Hoàng (Eval), Khánh (Sandbox), Tuấn (Sprint Review)** có deadline và acceptance criteria. |
+
+---
+
+### 2. Kiểm tra tính nhất quán liên kết (Cross-Artefact Consistency Check)
+
+1. **Tính nhất quán Stakeholder ➔ Pitch & RACI**:
+   - Stakeholder quyền lực nhất ở Trang 1 là **Ông Trần Hùng (Head of Claims - Champion)** và **Bà Đỗ Thu Hà (Compliance - Blocker)** được đặt làm đối tượng trọng tâm trong bản Pitch "Kết luận trước" và giữ vai trò Accountable (A) cho việc nghiệm thu / Consulted (C) cho bảo mật trong bảng RACI Trang 2.
+2. **Tính nhất quán Capability Gap ➔ Team Health & Growth Plan**:
+   - Khoảng trống về năng lực kiểm thử mô hình và MLOps ở Trang 3 kết nối trực tiếp với điểm số thấp về "Tốc độ ra sản phẩm" và vấn đề "Thiếu bộ Automated Evals" ở Trang 4.
+3. **Tính nhất quán RACI ➔ Growth Plan Owners**:
+   - Trong RACI, *Nguyễn Minh Hoàng* chịu trách nhiệm mô hình AI ➔ Trong Growth Plan phụ trách Xây dựng bộ 50 Golden Cases & Script Eval.
+   - *Lê Quốc Khánh* chịu trách nhiệm Ingestion & Hạ tầng ➔ Trong Growth Plan phụ trách Dựng Staging Web Sandbox nội bộ.
+   - *Trần Anh Tuấn* chịu trách nhiệm điều phối Pilot và Stakeholders ➔ Trong Growth Plan làm Owner của Weekly Sprint Review & Blocker Clearing.
+
+---
+
+### 3. Thông tin bàn giao Repository & File Báo cáo Nộp bài
+
+* **Tên Repository chính thức**: `Track1_Day25_TeamHTK_` (hoặc `https://github.com/TeamHTK/Track1_Day25_TeamHTK_`)
+* **Trưởng nhóm phụ trách nộp**: **Trần Anh Tuấn** (Product Lead)
+* **Thành viên tham gia**: Nguyễn Minh Hoàng, Trần Anh Tuấn, Lê Quốc Khánh
+* **File báo cáo xuất xưởng PDF (Tối đa đúng 4 trang)**: [`Day25_AI-Team-Lab_TeamHTK.pdf`](file:///d:/Track1_Day25_TeamHTK_/Day25_AI-Team-Lab_TeamHTK.pdf)
+  - *Trang 1*: Stakeholder Map & 4 Chiến lược hành động ưu tiên
+  - *Trang 2*: Pitch "Kết luận trước", Xử lý phản biện & RACI Matrix
+  - *Trang 3*: Thiết kế Embedded AI Team & Priority Resourcing (Hire/Outsource/Partner)
+  - *Trang 4*: Đánh giá Team Health & Growth Plan 30 ngày (Action, Owner, Deadline)
+
+---
+
+> **✅ GATE 5 PASS — REPOSITORY & BÁO CÁO ĐÃ SẴN SÀNG NỘP**:
+> - Repository có đầy đủ cấu trúc chuẩn chỉnh trong `README.md`.
+> - Đã xuất thành công file PDF báo cáo tối đa 4 trang `Day25_AI-Team-Lab_TeamHTK.pdf` ngay tại thư mục gốc.
+> - Toàn bộ 4 Artefact có tính nhất quán cao, đáp ứng 100% tiêu chí của tất cả các Gate (Gate 0 đến Gate 5).
+
+
 
 
