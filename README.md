@@ -13,8 +13,8 @@ File: `Day25_AI-Team-Lab_TeamChi.pdf`
 ---
 
 > [!NOTE]
-> ### 📝 Ghi chú về Hình thức Thực hiện Bài Lab (Solo Project Context)
-> - **Lý do thực hiện cá nhân**: Do 2 thành viên dự kiến ban đầu đã ghép sang nhóm đồ án khác, học viên **Thân Thị Kim Chi (MHV: 2A202602797)** thực hiện bài Lab này với tư cách **Solo AI Builder** cho dự án SmartClaim AI.
+> ### Ghi chú về Hình thức Thực hiện Bài Lab
+> - **Lý do thực hiện cá nhân**: Do 2 thành viên dự kiến ban đầu đã ghép sang nhóm đồ án khác, học viên **Thân Thị Kim Chi (MHV: 2A202602797)** thực hiện bài Lab này với tư cách **AI Builder** cho dự án SmartClaim AI.
 > - **Căn cứ tuân thủ quy chế bài Lab**:
 >   1. **Về quy mô nhóm**: Áp dụng quy định tại đề bài: *"Nếu lớp đã có team dự án cố định khác quy mô này, giữ nguyên team hiện tại và báo giảng viên trước khi bắt đầu Lab."*
 >   2. **Về phân định trách nhiệm RACI**: Áp dụng đúng rule-of-thumb tại Phase 2: *"Với team rất nhỏ, một người có thể đồng thời là R và A. Điều bắt buộc trong Lab: mỗi công việc chỉ có 1 A rõ ràng."* (Học viên kiêm nhiệm R và A ở các hạng mục kỹ thuật/dữ liệu; riêng hạng mục Phê duyệt Nghiệm thu Release giao quyền Accountable duy nhất cho Stakeholder Trưởng phòng Bồi thường để đảm bảo khách quan).
@@ -22,11 +22,11 @@ File: `Day25_AI-Team-Lab_TeamChi.pdf`
 
 ---
 
-## 📌 Phase 0 — Chốt phạm vi & Cách làm (Scope & Ground Rules)
+## Phase 0 — Chốt phạm vi & Cách làm (Scope & Ground Rules)
 
 | STT | Hạng mục | Nội dung chốt của Dự án (Solo Project) |
 |:---:|:---|:---|
-| **1** | **Thành viên ** | **Thân Thị Kim Chi** — MHV: **2A202602797** *(Đảm nhiệm vai trò Solo AI Builder: Product, Model & System Integration)*. |
+| **1** | **Thành viên** | **Thân Thị Kim Chi** — MHV: **2A202602797** *(Đảm nhiệm vai trò Solo AI Builder: Product, Model & System Integration)*. |
 | **2** | **Tên dự án AI** | **SmartClaim AI** — Hệ thống AI tự động hóa trích xuất dữ liệu bệnh án & thẩm định sơ bộ hồ sơ bồi thường bảo hiểm sức khỏe (Health Insurance Claims Automation using OCR + Multi-modal RAG). |
 | **3** | **Mục tiêu 1–3 tháng tới** | • Đạt độ chính xác trích xuất hóa đơn viện phí / toa thuốc > 92% trên tập 300 mẫu thực tế.<br>• Giảm thời gian xử lý hồ sơ thẩm định sơ bộ từ 25 phút xuống < 3 phút/hồ sơ.<br>• Hoàn thành bản MVP thử nghiệm Pilot thành công với 1 công ty bảo hiểm đối tác (hoặc bộ phận Claims nội bộ 15 nhân viên). |
 | **4** | **Trưởng nhóm / Repo Owner** | **Thân Thị Kim Chi** (chịu trách nhiệm toàn diện khởi tạo repo, quản lý code, artefact và nộp bài). |
@@ -148,14 +148,14 @@ Xác định **7 stakeholder cụ thể** (không ghi chung chung) liên quan tr
 
 ---
 
-> **✅ GATE 2 PASS**:
+> **GATE 2 PASS**:
 > - Pitch chuẩn cấu trúc Conclusion First → 3 Lý do → Bằng chứng định lượng (92.4%, 1m48s) → Small ask cụ thể.
 > - Đã có 1 phản biện gay gắt nhất về rủi ro sai sót y khoa & kèm giải pháp kỹ thuật hạ tầng (Human-in-the-loop, Confidence Threshold 88%, Rule Engine đối soát).
 > - Bảng RACI tuân thủ chuẩn rubric cho solo/team nhỏ, **mỗi hàng chỉ có ĐÚNG 1 ACCOUNTABLE (A)**.
 
 ---
 
-## 👥 Phase 3 — Artefact 3: Thiết kế AI Team & Priority Resourcing (Trang 3 PDF)
+## Phase 3 — Artefact 3: Thiết kế AI Team & Priority Resourcing (Trang 3 PDF)
 
 ### 1. Lựa chọn AI Team Architecture
 
@@ -249,7 +249,7 @@ Cam kết **3 hành động cụ thể có chủ sở hữu (Owner), hạn chót
 
 ---
 
-> **✅ GATE 4 PASS**:
+> **GATE 4 PASS**:
 > - Đã chấm đầy đủ 4 khía cạnh sức khỏe cho dự án solo.
 > - Đã phân tích thấu đáo điểm thấp nhất (Tốc độ ra sản phẩm 2.5/5), chỉ đúng điểm nghẽn eval.
 > - Đã nâng cấp năng lực cho Thân Thị Kim Chi theo khung L1/L2/L3 (từ L2 lên L3 ở mảng AI Evaluation).
@@ -257,7 +257,7 @@ Cam kết **3 hành động cụ thể có chủ sở hữu (Owner), hạn chót
 
 ---
 
-## 🔍 Phase 5 — Tự soi lỗi, Tính nhất quán & Hoàn thiện bài nộp (Trang tổng kết)
+## Phase 5 — Tự soi lỗi, Tính nhất quán & Hoàn thiện bài nộp (Trang tổng kết)
 
 ### 1. Bảng kiểm tra tự soi lỗi 4 Artefact (Self-Audit Checklist)
 
@@ -282,15 +282,15 @@ Cam kết **3 hành động cụ thể có chủ sở hữu (Owner), hạn chót
 
 ---
 
-> **✅ GATE 5 PASS — REPOSITORY & BÁO CÁO ĐÃ SẴN SÀNG NỘP**:
+> **GATE 5 PASS — REPOSITORY & BÁO CÁO ĐÃ SẴN SÀNG NỘP**:
 > - Repository có đầy đủ cấu trúc chuẩn chỉnh trong `README.md`.
 > - Đã xuất thành công file PDF báo cáo tối đa 4 trang `Day25_AI-Team-Lab_TeamChi.pdf` ngay tại thư mục gốc.
 > - Toàn bộ 4 Artefact có tính nhất quán cao, đáp ứng 100% tiêu chí của tất cả các Gate (Gate 0 đến Gate 5).
 
 ---
 
-## 🛡️ Tuyên bố Tuân thủ Quy tắc dùng AI trong Lab (AI Ethics & Compliance)
+## Tuyên bố Tuân thủ Quy tắc dùng AI trong Lab (AI Ethics & Compliance)
 
 Tôi — **Thân Thị Kim Chi** cam kết tuân thủ nghiêm túc 100% quy tắc sử dụng AI theo hướng dẫn của giảng viên:
-* ✅ Dùng AI để gợi ý mở rộng góc nhìn stakeholder, chuẩn hóa cấu trúc Pitch Conclusion First, rà soát tính logic của RACI và chuyển đổi vấn đề năng suất thành hành động cụ thể có thể đo lường được.
-* 🚫 Tuyệt đối không bịa stakeholder ảo, không hứa hẹn số liệu viển vông, không vẽ cấu trúc cồng kềnh trên giấy và cam kết thực thi 100% kế hoạch trong Growth Plan 30 ngày.
+* Dùng AI để gợi ý mở rộng góc nhìn stakeholder, chuẩn hóa cấu trúc Pitch Conclusion First, rà soát tính logic của RACI và chuyển đổi vấn đề năng suất thành hành động cụ thể có thể đo lường được.
+* Tuyệt đối không bịa stakeholder ảo, không hứa hẹn số liệu viển vông, không vẽ cấu trúc cồng kềnh trên giấy và cam kết thực thi 100% kế hoạch trong Growth Plan 30 ngày.
