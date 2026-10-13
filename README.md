@@ -1,16 +1,16 @@
 # Track 1 - Day 25 — AI Team Lab
 
-- Team: Team HTK
+- Team: Nhóm HKT
 - Thành viên (3–5 người):
-  1. Nguyễn Minh Hoàng — AI Engineer & Model Optimization Lead
-  2. Trần Anh Tuấn — Product Lead & Solution Architect (Trưởng nhóm)
-  3. Lê Quốc Khánh — Data & Fullstack Backend Engineer
+  1. Ngô Lê Thủy Tiên — Product Lead & Solution Architect (Nhóm trưởng)
+  2. Thân Thị Kim Chi (MHV: 2A202602797) — AI Engineer & Model Optimization Lead
+  3. Nguyễn Khánh Linh — Data & Fullstack Backend Engineer
 - Tên dự án: SmartClaim AI
-- Link sản phẩm/demo (nếu có): https://github.com/TeamHTK/Track1_Day25_TeamHTK_SmartClaimAI
+- Link sản phẩm/demo (nếu có): https://github.com/TeamHKT/Track1_Day25_TeamHKT_SmartClaimAI
 
 ## Bài nộp
 
-File: `Day25_AI-Team-Lab_TeamHTK.pdf`
+File: `Day25_AI-Team-Lab_TeamHKT.pdf`
 
 ---
 
@@ -19,13 +19,13 @@ File: `Day25_AI-Team-Lab_TeamHTK.pdf`
 
 | STT | Hạng mục | Nội dung thống nhất của Team |
 |:---:|:---|:---|
-| **1** | **Thành viên team (3 thành viên)** | • **Nguyễn Minh Hoàng** — AI Engineer & Model Optimization Lead<br>• **Trần Anh Tuấn** — Product Lead & Solution Architect *(Trưởng nhóm)*<br>• **Lê Quốc Khánh** — Data & Fullstack Backend Engineer |
+| **1** | **Thành viên team (3 thành viên)** | • **Thân Thị Kim Chi** — AI Engineer & Model Optimization Lead<br>• **Ngô Lê Thủy Tiên** — Product Lead & Solution Architect *(Trưởng nhóm)*<br>• **Nguyễn Khánh Linh** — Data & Fullstack Backend Engineer |
 | **2** | **Tên dự án AI** | **SmartClaim AI** — Hệ thống AI tự động hóa trích xuất dữ liệu bệnh án & thẩm định sơ bộ hồ sơ bồi thường bảo hiểm sức khỏe (Health Insurance Claims Automation using OCR + Multi-modal RAG). |
 | **3** | **Mục tiêu 1–3 tháng tới** | • Đạt độ chính xác trích xuất hóa đơn viện phí / toa thuốc > 92% trên tập 300 mẫu thực tế.<br>• Giảm thời gian xử lý hồ sơ thẩm định sơ bộ từ 25 phút xuống < 3 phút/hồ sơ.<br>• Hoàn thành bản MVP thử nghiệm Pilot thành công với 1 công ty bảo hiểm đối tác (hoặc bộ phận Claims nội bộ 15 nhân viên). |
-| **4** | **Trưởng nhóm / Repo Owner** | **Trần Anh Tuấn** (chịu trách nhiệm khởi tạo repo, điều phối checklist, merge artefact và nộp link). |
+| **4** | **Trưởng nhóm / Repo Owner** | **Ngô Lê Thủy Tiên** (chịu trách nhiệm khởi tạo repo, điều phối checklist, merge artefact và nộp link). |
 | **5** | **Format bài nộp** | GitHub Repository (`README.md`) + File Báo cáo tổng hợp PDF 4 trang (tương ứng 4 Artefact). |
 
-> **✅ GATE 0 PASS**: Toàn bộ thành viên đã chốt chung phạm vi dự án SmartClaim AI, chung mục tiêu 1–3 tháng và có Trưởng nhóm (Trần Anh Tuấn) phụ trách tổng hợp.
+> **✅ GATE 0 PASS**: Toàn bộ thành viên đã chốt chung phạm vi dự án SmartClaim AI, chung mục tiêu 1–3 tháng và có Trưởng nhóm (Ngô Lê Thủy Tiên) phụ trách tổng hợp.
 
 ---
 
@@ -137,11 +137,11 @@ Team xác định **7 stakeholder cụ thể** (không ghi chung chung) liên qu
 
 ### 3. Cá nhân viết lại Pitch & Team tổng hợp
 
-* **Nguyễn Minh Hoàng (AI Engineer)**:  
+* **Thân Thị Kim Chi (AI Engineer)**:  
   *Góc nhìn kỹ thuật & độ tin cậy:* "Chúng tôi đề xuất thử nghiệm mô hình Multi-modal RAG kết hợp OCR chuyên dụng cho y tế trên 200 hồ sơ. Hệ thống đã đạt 92.4% Exact Match và được trang bị Guardrails chống Hallucination đa tầng với Confidence Threshold 88%. Đề xuất anh Hùng phê duyệt buổi Test kỹ thuật 30 phút vào thứ Năm để kiểm chứng độ chính xác trực tiếp trên dữ liệu mẫu."
-* **Trần Anh Tuấn (Product Lead)**:  
+* **Ngô Lê Thủy Tiên (Product Lead)**:  
   *Góc nhìn giá trị kinh doanh & vận hành:* "Để chuẩn bị cho đợt tăng tải 40% hồ sơ cuối năm mà không cần tuyển ồ ạt nhân sự thời vụ, chúng tôi đề xuất Pilot SmartClaim AI trong 3 tuần giúp giảm 80% thời gian nhập liệu thủ công. Kết quả demo cho thấy tốc độ xử lý nhanh hơn 10 lần. Mong anh Hùng đồng ý cho 2 thẩm định viên tham gia buổi Demo 30 phút tuần này để kiểm nghiệm thực tế."
-* **Lê Quốc Khánh (Data & Backend Engineer)**:  
+* **Nguyễn Khánh Linh (Data & Backend Engineer)**:  
   *Góc nhìn tích hợp & an toàn dữ liệu:* "Hệ thống SmartClaim AI đã sẵn sàng hoạt động độc lập qua cổng Web Portal bảo mật, không đụng chạm đến Core IT. Dữ liệu bệnh án được ẩn danh hóa PII 100% tại máy chủ cục bộ. Đề xuất anh Hùng phê duyệt bộ 200 hồ sơ lịch sử ẩn danh để chúng tôi đối soát tự động song song với kết quả thẩm định cũ."
 * 👉 **Team thống nhất**: Sử dụng phiên bản tổng hợp ở Mục 1 — kết hợp bài toán nhức nhối về năng suất của vận hành, bằng chứng thời gian/độ chính xác cụ thể và Small Ask rõ ràng, không gây áp lực cam kết lớn.
 
@@ -151,7 +151,7 @@ Team xác định **7 stakeholder cụ thể** (không ghi chung chung) liên qu
 
 *Nguyên tắc tuân thủ: Mỗi công việc có **đúng 1 Accountable (A) duy nhất**. Tách biệt rõ giữa người làm (R) và người chịu trách nhiệm cuối (A).*
 
-| STT | Công việc trọng tâm (1–2 tháng tới) | Product Lead<br>(Trần Anh Tuấn) | AI Engineer<br>(Nguyễn Minh Hoàng) | Backend/Data<br>(Lê Quốc Khánh) | Stakeholder chính<br>(Head of Claims / Compliance) |
+| STT | Công việc trọng tâm (1–2 tháng tới) | Product Lead<br>(Ngô Lê Thủy Tiên) | AI Engineer<br>(Thân Thị Kim Chi) | Backend/Data<br>(Nguyễn Khánh Linh) | Stakeholder chính<br>(Head of Claims / Compliance) |
 |:---:|:---|:---:|:---:|:---:|:---:|
 | **1** | **Xác định Use case & Quy tắc nghiệp vụ thẩm định** *(Claims Business Rules)* | **A** | C | C | **R** *(Trần Hùng - Head of Claims)* |
 | **2** | **Thu thập, làm sạch & Ẩn danh hóa dữ liệu y tế** *(PII Masking & Pipeline)* | C | C | **A / R** | **C** *(Đỗ Thu Hà - Compliance Officer)* |
@@ -161,11 +161,11 @@ Team xác định **7 stakeholder cụ thể** (không ghi chung chung) liên qu
 | **6** | **Nghiệm thu kết quả Pilot & Quyết định Release** *(Go/No-Go Decision)* | R | I | I | **A** *(Trần Hùng - Head of Claims)* |
 
 *Chú giải phân định RACI:*
-- **Việc 1**: *Trần Anh Tuấn (Product Lead)* chịu trách nhiệm cuối (**A**) việc chuyển hóa nghiệp vụ thành tài liệu đặc tả; *Trần Hùng (Stakeholder)* là người trực tiếp định nghĩa và cung cấp quy tắc (**R**).
-- **Việc 2**: *Lê Quốc Khánh* chịu trách nhiệm chính (**A/R**) việc pipeline dữ liệu bảo mật; *Bà Đỗ Thu Hà* được tham vấn (**C**) để chuẩn hóa phương án tuân thủ Nghị định 13.
-- **Việc 3**: *Nguyễn Minh Hoàng* chịu trách nhiệm toàn diện (**A/R**) về chất lượng mô hình AI và độ chính xác OCR.
-- **Việc 4**: *Trần Anh Tuấn* chịu trách nhiệm cuối (**A**) về tiêu chí đánh giá nghiệp vụ đạt chuẩn; Hoàng và Khánh phối hợp thực hiện (**R**).
-- **Việc 5**: *Trần Anh Tuấn* điều phối và chịu trách nhiệm toàn bộ đợt Pilot (**A**); Hoàng & Khánh hỗ trợ kỹ thuật (**R**); các thẩm định viên tham gia đóng góp ý kiến đánh giá (**C**).
+- **Việc 1**: *Ngô Lê Thủy Tiên (Product Lead)* chịu trách nhiệm cuối (**A**) việc chuyển hóa nghiệp vụ thành tài liệu đặc tả; *Trần Hùng (Stakeholder)* là người trực tiếp định nghĩa và cung cấp quy tắc (**R**).
+- **Việc 2**: *Nguyễn Khánh Linh* chịu trách nhiệm chính (**A/R**) việc pipeline dữ liệu bảo mật; *Bà Đỗ Thu Hà* được tham vấn (**C**) để chuẩn hóa phương án tuân thủ Nghị định 13.
+- **Việc 3**: *Thân Thị Kim Chi* chịu trách nhiệm toàn diện (**A/R**) về chất lượng mô hình AI và độ chính xác OCR.
+- **Việc 4**: *Ngô Lê Thủy Tiên* chịu trách nhiệm cuối (**A**) về tiêu chí đánh giá nghiệp vụ đạt chuẩn; Kim Chi và Khánh Linh phối hợp thực hiện (**R**).
+- **Việc 5**: *Ngô Lê Thủy Tiên* điều phối và chịu trách nhiệm toàn bộ đợt Pilot (**A**); Kim Chi & Khánh Linh hỗ trợ kỹ thuật (**R**); các thẩm định viên tham gia đóng góp ý kiến đánh giá (**C**).
 - **Việc 6**: *Trần Hùng (Stakeholder - Head of Claims)* là người duy nhất nắm quyền phê duyệt ký nghiệm thu và quyết định Go/No-Go (**A**).
 
 ---
@@ -197,7 +197,7 @@ Team xác định **7 stakeholder cụ thể** (không ghi chung chung) liên qu
 |   [CORE ROLES - GIAI ĐOẠN HIỆN TẠI (3 THÀNH VIÊN)]                                    |
 |   +--------------------------+  +--------------------------+  +-------------------+   |
 |   | AI Product & Solution    |  | AI & Model Engineer      |  | Data & Backend    |   |
-|   | Lead (Trần Anh Tuấn)     |  | (Nguyễn Minh Hoàng)      |  | Engineer (Lê Quốc |   |
+|   | Lead (Ngô Lê Thủy Tiên)     |  | (Thân Thị Kim Chi)      |  | Engineer (Lê Quốc |   |
 |   | • Nghiệp vụ & User Flow  |  | • Multi-modal OCR & RAG  |  |   Khánh)          |   |
 |   | • Human-in-the-Loop Spec |  | • Prompting & Guardrails |  | • PII Anonymizer  |   |
 |   | • Stakeholder Management |  | • Evaluation Metrics     |  | • API Ingestion   |   |
@@ -211,15 +211,15 @@ Team xác định **7 stakeholder cụ thể** (không ghi chung chung) liên qu
 ```
 
 #### Bảng chi tiết trách nhiệm các vai trò cốt lõi (Core Roles):
-1. **AI Product & Solution Lead (Trần Anh Tuấn — Core, hiện tại)**:
+1. **AI Product & Solution Lead (Ngô Lê Thủy Tiên — Core, hiện tại)**:
    - Sở hữu Product Vision, Roadmap và tiêu chí thành công của đợt Pilot.
    - Chuyển dịch nghiệp vụ thẩm định bảo hiểm phức tạp thành bài toán kỹ thuật; thiết kế giao diện tương tác thẩm định viên (Human-in-the-Loop UX).
    - Đo lường Business Metrics: Thời gian thẩm định trung bình, tỷ lệ can thiệp của con người (Touch Rate).
-2. **AI & Model Engineer (Nguyễn Minh Hoàng — Core, hiện tại)**:
+2. **AI & Model Engineer (Thân Thị Kim Chi — Core, hiện tại)**:
    - Xây dựng pipeline tích hợp Multi-modal OCR chuyên dụng cho tài liệu y khoa tiếng Việt và Vision-Language Models (VLM).
    - Thiết kế kiến trúc Multi-modal RAG trích xuất thông tin cấu trúc (JSON Schema) chuẩn xác.
    - Thiết lập Guardrails kiểm soát ảo giác và hệ thống tính điểm tự tin (Confidence Scoring Engine).
-3. **Data & Backend Engineer (Lê Quốc Khánh — Core, hiện tại)**:
+3. **Data & Backend Engineer (Nguyễn Khánh Linh — Core, hiện tại)**:
    - Xây dựng module làm sạch và ẩn danh hóa dữ liệu PII on-premise tuân thủ Nghị định 13/2023/NĐ-CP.
    - Thiết kế hệ thống RESTful API / Async Webhook tốc độ cao kết nối với cổng Portal thẩm định.
    - Đảm bảo an toàn hạ tầng Sandbox, quản lý cơ sở dữ liệu Vector DB và PostgreSQL.
@@ -256,7 +256,7 @@ Team xác định **3 khoảng trống năng lực (Capability Gap)** quan trọ
 
 ### 1. Bảng tự chấm điểm Team Health cá nhân (Thang điểm 1–5)
 
-| Khía cạnh đánh giá | Nguyễn Minh Hoàng<br>*(AI Engineer)* | Trần Anh Tuấn<br>*(Product Lead)* | Lê Quốc Khánh<br>*(Data & Backend)* | Điểm Trung Bình Team |
+| Khía cạnh đánh giá | Thân Thị Kim Chi<br>*(AI Engineer)* | Ngô Lê Thủy Tiên<br>*(Product Lead)* | Nguyễn Khánh Linh<br>*(Data & Backend)* | Điểm Trung Bình Team |
 |:---|:---:|:---:|:---:|:---:|
 | **1. Chất lượng AI** *(Output ổn định, ít ảo giác)* | **4 / 5** | **3 / 5** | **4 / 5** | **3.67 / 5** |
 | **2. Tiến độ** *(Hoàn thành đúng cam kết sprint)* | **3 / 5** | **3 / 5** | **4 / 5** | **3.33 / 5** |
@@ -272,8 +272,8 @@ Team xác định **3 khoảng trống năng lực (Capability Gap)** quan trọ
 * **Khía cạnh chênh lệch điểm nhiều nhất**:  
   **Chất lượng AI (Hoàng chấm 4/5, Tuấn chấm 3/5 — lệch 1 điểm)**.
 * **Lý do có sự chênh lệch**:  
-  - *Nguyễn Minh Hoàng (AI Engineer)* nhìn nhận chất lượng qua các chỉ số benchmark trong phòng lab (F1-score 92.4% trên tập test sạch đã định dạng chuẩn).  
-  - *Trần Anh Tuấn (Product Lead)* nhìn nhận dưới góc độ trải nghiệm của thẩm định viên thực tế: khi gặp các hóa đơn chụp xiên góc, bóng mờ hoặc toa thuốc viết tay có chữ ký đè lên tên thuốc, mô hình vẫn bỏ sót trường hoặc trả về kết quả rỗng, buộc con người phải can thiệp thủ công.
+  - *Thân Thị Kim Chi (AI Engineer)* nhìn nhận chất lượng qua các chỉ số benchmark trong phòng lab (F1-score 92.4% trên tập test sạch đã định dạng chuẩn).  
+  - *Ngô Lê Thủy Tiên (Product Lead)* nhìn nhận dưới góc độ trải nghiệm của thẩm định viên thực tế: khi gặp các hóa đơn chụp xiên góc, bóng mờ hoặc toa thuốc viết tay có chữ ký đè lên tên thuốc, mô hình vẫn bỏ sót trường hoặc trả về kết quả rỗng, buộc con người phải can thiệp thủ công.
 * **Vấn đề then chốt đe dọa trực tiếp milestone Pilot tiếp theo**:  
   **Thiếu hệ thống đánh giá tự động (Automated Evals Framework)**: Mỗi lần cập nhật thuật toán, team phải ngồi kiểm thử bằng mắt từng hồ sơ, vừa mất thời gian vừa không phát hiện kịp thời các lỗi hồi quy (regression bugs).
 
@@ -283,7 +283,7 @@ Team xác định **3 khoảng trống năng lực (Capability Gap)** quan trọ
 
 Dựa trên **Competency Framework (L1 — AI Literate, L2 — AI Practitioner, L3 — AI Builder)**:
 
-* **Role lựa chọn**: **AI & Model Engineer (Nguyễn Minh Hoàng)**.
+* **Role lựa chọn**: **AI & Model Engineer (Thân Thị Kim Chi)**.
 * **Cấp độ hiện tại**: **Gần L2 — AI Practitioner**  
   *(Đã thành thạo tích hợp Vision-Language Model, kỹ thuật RAG và Prompt Engineering nâng cao, nhưng quy trình kiểm định chất lượng mô hình vẫn phụ thuộc vào test thủ công cục bộ).*
 * **Năng lực mục tiêu cần nâng tiếp theo**: **AI Evaluation & Automated Quality Benchmarking (Đánh giá chất lượng mô hình tự động)** — bước đệm tiến lên **L3 — AI Builder**.
@@ -298,9 +298,9 @@ Team thống nhất **3 hành động cụ thể, có chủ sở hữu (Owner), 
 
 | STT | Vấn đề cần giải quyết | Hành động cụ thể trong 30 ngày | Owner (Người phụ trách) | Deadline (Hạn chót) | Dấu hiệu hoàn thành (Acceptance Criteria) |
 |:---:|:---|:---|:---:|:---:|:---|
-| **1** | **Chất lượng AI & Thiếu bộ đo tự động** *(Eval Gap)* | Xây dựng bộ **50 Golden Cases** (chuẩn hóa dữ liệu ground-truth y tế); tích hợp script đo lường tự động (F1-score, Field Accuracy, Token Cost). | **Nguyễn Minh Hoàng**<br>*(AI Engineer)* | **28/10/2026** | Script `eval_pipeline.py` chạy tự động < 5 phút, xuất báo cáo so sánh chi tiết độ chính xác từng trường, tự động cảnh báo nếu tỷ lệ trích xuất tụt dưới 90%. |
-| **2** | **Tốc độ ra sản phẩm chậm** *(Deployment Bottleneck)* | Xây dựng môi trường **Staging Web Sandbox nội bộ** với tính năng *"Drag-and-Drop & Instant Inspection"* (kéo thả ảnh chụp chứng từ -> hiển thị kết quả trích xuất và bounding box trong 3 giây). | **Lê Quốc Khánh**<br>*(Backend/Data)* | **05/11/2026** | Triển khai thành công Web Sandbox nội bộ; Product Lead và 2 thẩm định viên có thể tự truy cập upload thử nghiệm bất cứ lúc nào mà không cần hỗ trợ kỹ thuật. |
-| **3** | **Tiến độ & Phối hợp giải quyết Blocker** *(Alignment Gap)* | Thiết lập cơ chế họp cố định **"Weekly Sprint Review & Blocker Clearing" 25 phút vào 16h30 thứ Sáu hàng tuần**; trực tiếp cập nhật tiến độ tương tác với 4 stakeholder ưu tiên. | **Trần Anh Tuấn**<br>*(Product Lead)* | **Bắt đầu 17/10/2026**<br>*(Duy trì liên tục 4 tuần)* | 100% các buổi họp có Action Log gắn hạn hoàn thành cụ thể; tỷ lệ hoàn thành đúng hạn các cam kết trong Sprint tăng từ 70% lên trên 90%. |
+| **1** | **Chất lượng AI & Thiếu bộ đo tự động** *(Eval Gap)* | Xây dựng bộ **50 Golden Cases** (chuẩn hóa dữ liệu ground-truth y tế); tích hợp script đo lường tự động (F1-score, Field Accuracy, Token Cost). | **Thân Thị Kim Chi**<br>*(AI Engineer)* | **28/10/2026** | Script `eval_pipeline.py` chạy tự động < 5 phút, xuất báo cáo so sánh chi tiết độ chính xác từng trường, tự động cảnh báo nếu tỷ lệ trích xuất tụt dưới 90%. |
+| **2** | **Tốc độ ra sản phẩm chậm** *(Deployment Bottleneck)* | Xây dựng môi trường **Staging Web Sandbox nội bộ** với tính năng *"Drag-and-Drop & Instant Inspection"* (kéo thả ảnh chụp chứng từ -> hiển thị kết quả trích xuất và bounding box trong 3 giây). | **Nguyễn Khánh Linh**<br>*(Backend/Data)* | **05/11/2026** | Triển khai thành công Web Sandbox nội bộ; Product Lead và 2 thẩm định viên có thể tự truy cập upload thử nghiệm bất cứ lúc nào mà không cần hỗ trợ kỹ thuật. |
+| **3** | **Tiến độ & Phối hợp giải quyết Blocker** *(Alignment Gap)* | Thiết lập cơ chế họp cố định **"Weekly Sprint Review & Blocker Clearing" 25 phút vào 16h30 thứ Sáu hàng tuần**; trực tiếp cập nhật tiến độ tương tác với 4 stakeholder ưu tiên. | **Ngô Lê Thủy Tiên**<br>*(Product Lead)* | **Bắt đầu 17/10/2026**<br>*(Duy trì liên tục 4 tuần)* | 100% các buổi họp có Action Log gắn hạn hoàn thành cụ thể; tỷ lệ hoàn thành đúng hạn các cam kết trong Sprint tăng từ 70% lên trên 90%. |
 
 ---
 
@@ -321,7 +321,7 @@ Team thống nhất **3 hành động cụ thể, có chủ sở hữu (Owner), 
 | **Trang 1: Stakeholder Map & Chiến lược** | • Có ít nhất 6 stakeholder cụ thể (không ghi chung chung)?<br>• Đã map chuẩn theo trục Influence × Interest?<br>• Dùng đúng 4 quadrant (Champion/Blocker/Supporter/Bystander) và kiểm tra Stance thực tế?<br>• Đủ 4 hành động cụ thể cho 4 stakeholder ưu tiên? | **ĐẠT (PASS)** | • Xác định **7 stakeholder thực tế** kèm chức danh cụ thể.<br>• Phân bổ rõ ràng trên ma trận 2 trục.<br>• Ghi rõ Stance (Ủng hộ / Trung lập / Chưa ủng hộ) kèm lý giải.<br>• 4 hành động có **deadline, giờ giấc và sản phẩm bàn giao định lượng**. |
 | **Trang 2: Pitch & RACI Matrix** | • Pitch áp dụng cấu trúc Conclusion First (Kết luận trước)?<br>• Có số liệu/bằng chứng hỗ trợ thay vì hứa suông?<br>• Có Small Ask cụ thể, khả thi?<br>• Có 1 phản biện xác đáng nhất và giải pháp hạ tầng?<br>• Mỗi dòng trong RACI chỉ có **đúng 1 Accountable (A)**? | **ĐẠT (PASS)** | • Mở đầu bằng đề xuất Pilot 3 tuần trên 200 hồ sơ.<br>• Bằng chứng: **92.4% Exact Match, 1m48s/hồ sơ, 100% bắt lệch**.<br>• Small Ask: Demo 30 phút thứ Năm + 200 hồ sơ ẩn danh test mù.<br>• Phản biện về sai sót y khoa được giải quyết bằng Human-in-the-Loop, Confidence 88% và Rule Engine.<br>• Bảng 6 việc: **Mỗi hàng đúng 1 A duy nhất**, tách biệt R và A. |
 | **Trang 3: AI Team Architecture & Resourcing** | • Kiến trúc AI Team có giải thích vì sao phù hợp quy mô?<br>• Phân định rõ Core Roles (cần ngay) & Extended Roles?<br>• Có nhận diện Capability Gap rõ ràng?<br>• Priority Resourcing phân bổ đúng Hire / Outsource / Partner? | **ĐẠT (PASS)** | • Chọn **Embedded AI Team** (phù hợp team 3 người, feedback loop < 24h).<br>• Core: Product Lead, AI Engineer, Backend/Data; Extended: MLOps, Medical Auditor, AI Governance.<br>• 3 Gap: Y tế ➔ **Partner**; Gán nhãn ➔ **Outsource**; MLOps ➔ **Hire** khi scale. |
-| **Trang 4: Team Health & Growth Plan** | • Đủ 4 khía cạnh sức khỏe team (Chất lượng, Tiến độ, Tinh thần, Tốc độ)?<br>• Phân tích điểm thấp nhất và điểm chênh lệch?<br>• Chọn 1 competency nâng cấp theo L1/L2/L3?<br>• Kế hoạch 30 ngày có tối đa 3 hành động có Owner + Deadline + Tiêu chí? | **ĐẠT (PASS)** | • Đủ 4 khía cạnh với điểm trung bình của 3 thành viên.<br>• Chỉ ra điểm nghẽn: Tốc độ ra sản phẩm (2.67/5) và chênh lệch Chất lượng AI.<br>• Nâng cấp AI Engineer từ gần L2 lên L3 ở mảng AI Evaluation.<br>• Đúng 3 hành động: **Hoàng (Eval), Khánh (Sandbox), Tuấn (Sprint Review)** có deadline và acceptance criteria. |
+| **Trang 4: Team Health & Growth Plan** | • Đủ 4 khía cạnh sức khỏe team (Chất lượng, Tiến độ, Tinh thần, Tốc độ)?<br>• Phân tích điểm thấp nhất và điểm chênh lệch?<br>• Chọn 1 competency nâng cấp theo L1/L2/L3?<br>• Kế hoạch 30 ngày có tối đa 3 hành động có Owner + Deadline + Tiêu chí? | **ĐẠT (PASS)** | • Đủ 4 khía cạnh với điểm trung bình của 3 thành viên.<br>• Chỉ ra điểm nghẽn: Tốc độ ra sản phẩm (2.67/5) và chênh lệch Chất lượng AI.<br>• Nâng cấp AI Engineer từ gần L2 lên L3 ở mảng AI Evaluation.<br>• Đúng 3 hành động: **Kim Chi (Eval), Khánh Linh (Sandbox), Thủy Tiên (Sprint Review)** có deadline và acceptance criteria. |
 
 ---
 
@@ -332,17 +332,17 @@ Team thống nhất **3 hành động cụ thể, có chủ sở hữu (Owner), 
 2. **Tính nhất quán Capability Gap ➔ Team Health & Growth Plan**:
    - Khoảng trống về năng lực kiểm thử mô hình và MLOps ở Trang 3 kết nối trực tiếp với điểm số thấp về "Tốc độ ra sản phẩm" và vấn đề "Thiếu bộ Automated Evals" ở Trang 4.
 3. **Tính nhất quán RACI ➔ Growth Plan Owners**:
-   - Trong RACI, *Nguyễn Minh Hoàng* chịu trách nhiệm mô hình AI ➔ Trong Growth Plan phụ trách Xây dựng bộ 50 Golden Cases & Script Eval.
-   - *Lê Quốc Khánh* chịu trách nhiệm Ingestion & Hạ tầng ➔ Trong Growth Plan phụ trách Dựng Staging Web Sandbox nội bộ.
-   - *Trần Anh Tuấn* chịu trách nhiệm điều phối Pilot và Stakeholders ➔ Trong Growth Plan làm Owner của Weekly Sprint Review & Blocker Clearing.
+   - Trong RACI, *Thân Thị Kim Chi* chịu trách nhiệm mô hình AI ➔ Trong Growth Plan phụ trách Xây dựng bộ 50 Golden Cases & Script Eval.
+   - *Nguyễn Khánh Linh* chịu trách nhiệm Ingestion & Hạ tầng ➔ Trong Growth Plan phụ trách Dựng Staging Web Sandbox nội bộ.
+   - *Ngô Lê Thủy Tiên* chịu trách nhiệm điều phối Pilot và Stakeholders ➔ Trong Growth Plan làm Owner của Weekly Sprint Review & Blocker Clearing.
 
 ---
 
 ### 3. Thông tin bàn giao Repository & File Báo cáo Nộp bài
 
 * **Tên Repository chính thức**: `Track1_Day25_TeamHTK_` (hoặc `https://github.com/TeamHTK/Track1_Day25_TeamHTK_`)
-* **Trưởng nhóm phụ trách nộp**: **Trần Anh Tuấn** (Product Lead)
-* **Thành viên tham gia**: Nguyễn Minh Hoàng, Trần Anh Tuấn, Lê Quốc Khánh
+* **Trưởng nhóm phụ trách nộp**: **Ngô Lê Thủy Tiên** (Product Lead)
+* **Thành viên tham gia**: Thân Thị Kim Chi, Ngô Lê Thủy Tiên, Nguyễn Khánh Linh
 * **File báo cáo xuất xưởng PDF (Tối đa đúng 4 trang)**: [`Day25_AI-Team-Lab_TeamHTK.pdf`](file:///d:/Track1_Day25_TeamHTK_/Day25_AI-Team-Lab_TeamHTK.pdf)
   - *Trang 1*: Stakeholder Map & 4 Chiến lược hành động ưu tiên
   - *Trang 2*: Pitch "Kết luận trước", Xử lý phản biện & RACI Matrix
@@ -372,7 +372,7 @@ Team thống nhất **3 hành động cụ thể, có chủ sở hữu (Owner), 
 ### 2. Cam kết tuyệt đối không vi phạm (What was strictly avoided):
 * 🚫 **Không bịa stakeholder ảo**: Toàn bộ 7 stakeholder đều tương ứng với các vị trí vận hành và thẩm định có thật trong quy trình xử lý hồ sơ bồi thường bảo hiểm.
 * 🚫 **Không bịa số liệu quá đà / hứa hẹn viển vông**: Mọi cam kết hiệu năng (92.4% Exact Match, 1m48s/hồ sơ) đều đi kèm giải pháp kỹ thuật phòng vệ *Human-in-the-Loop* và *Confidence Threshold 88%*, không cam kết tự động hóa 100% vô căn cứ.
-* 🚫 **Không vẽ cơ cấu tổ chức "đẹp trên giấy"**: Không sao chép mô hình phòng ban đồ sộ của tập đoàn lớn; toàn bộ trách nhiệm gắn chặt vào năng lực thực tế của 3 thành viên Hoàng, Tuấn, Khánh.
+* 🚫 **Không vẽ cơ cấu tổ chức "đẹp trên giấy"**: Không sao chép mô hình phòng ban đồ sộ của tập đoàn lớn; toàn bộ trách nhiệm gắn chặt vào năng lực thực tế của 3 thành viên Thủy Tiên, Kim Chi, Khánh Linh.
 * 🚫 **Không viết Growth Plan chung chung**: Loại bỏ hoàn toàn các khẩu hiệu sáo rỗng như "cần cố gắng hơn", thay bằng các deliverables kỹ thuật có thể verify được (Script `eval_pipeline.py`, Staging Web Sandbox, Weekly Review 25 phút).
 
 
