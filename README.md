@@ -165,3 +165,78 @@ Team xác định **7 stakeholder cụ thể** (không ghi chung chung) liên qu
 > - Hoàn thành phần viết lại cá nhân của 3 thành viên và tổng hợp thống nhất.
 > - Bảng RACI gồm 6 công việc trọng tâm, **mỗi hàng chỉ có ĐÚNG 1 ACCOUNTABLE (A)**, tách biệt vai trò rõ ràng.
 
+---
+
+## 👥 Phase 3 — Artefact 3: Thiết kế AI Team & Priority Resourcing (Trang 3 PDF)
+
+### 1. Lựa chọn AI Team Architecture
+
+* **Mô hình lựa chọn**: **Embedded AI Team (Cross-functional Product Pod)**.
+* **Lý do lựa chọn & Sự phù hợp với giai đoạn hiện tại**:  
+  Đội ngũ hiện có quy mô tinh gọn 3 thành viên đang phát triển sản phẩm SmartClaim AI từ giai đoạn PoC bước vào thử nghiệm Pilot nội bộ (từ 0 lên 1). Mô hình **Embedded** tích hợp chặt chẽ toàn bộ các năng lực then chốt (AI, Data, Backend, Product) vào trong cùng một squad duy nhất. Mô hình này giúp loại bỏ hoàn toàn rào cản hành chính giữa các phòng ban, tạo ra vòng lặp phản hồi siêu ngắn (*daily feedback loop < 24h*) giữa kỹ thuật mô hình và yêu cầu nghiệp vụ thẩm định, không gây lãng phí chi phí vận hành cồng kềnh như mô hình Centralized hay phân tán phức tạp như Hybrid của các tập đoàn lớn.
+
+---
+
+### 2. Phân định Core Roles (Cần ngay) & Extended Roles (Cần khi scale)
+
+```
++---------------------------------------------------------------------------------------+
+|                                    SQUAD SMARTCLAIM AI                                |
+|                                                                                       |
+|   [CORE ROLES - GIAI ĐOẠN HIỆN TẠI (3 THÀNH VIÊN)]                                    |
+|   +--------------------------+  +--------------------------+  +-------------------+   |
+|   | AI Product & Solution    |  | AI & Model Engineer      |  | Data & Backend    |   |
+|   | Lead (Trần Anh Tuấn)     |  | (Nguyễn Minh Hoàng)      |  | Engineer (Lê Quốc |   |
+|   | • Nghiệp vụ & User Flow  |  | • Multi-modal OCR & RAG  |  |   Khánh)          |   |
+|   | • Human-in-the-Loop Spec |  | • Prompting & Guardrails |  | • PII Anonymizer  |   |
+|   | • Stakeholder Management |  | • Evaluation Metrics     |  | • API Ingestion   |   |
+|   +--------------------------+  +--------------------------+  +-------------------+   |
+|                                                                                       |
+|   [EXTENDED ROLES - BỔ SUNG KHI SCALE (3-6 THÁNG TỚI)]                                |
+|   • MLOps & Evals Engineer (Tự động hóa CI/CD, Model Monitoring, Drift Detection)     |
+|   • Healthcare Domain Auditor (Bác sĩ cố vấn danh mục thuốc BHYT & mã ICD-10)         |
+|   • AI Governance & Security Specialist (Chứng chỉ ISO 27001, HIPAA & Pháp lý)        |
++---------------------------------------------------------------------------------------+
+```
+
+#### Bảng chi tiết trách nhiệm các vai trò cốt lõi (Core Roles):
+1. **AI Product & Solution Lead (Trần Anh Tuấn — Core, hiện tại)**:
+   - Sở hữu Product Vision, Roadmap và tiêu chí thành công của đợt Pilot.
+   - Chuyển dịch nghiệp vụ thẩm định bảo hiểm phức tạp thành bài toán kỹ thuật; thiết kế giao diện tương tác thẩm định viên (Human-in-the-Loop UX).
+   - Đo lường Business Metrics: Thời gian thẩm định trung bình, tỷ lệ can thiệp của con người (Touch Rate).
+2. **AI & Model Engineer (Nguyễn Minh Hoàng — Core, hiện tại)**:
+   - Xây dựng pipeline tích hợp Multi-modal OCR chuyên dụng cho tài liệu y khoa tiếng Việt và Vision-Language Models (VLM).
+   - Thiết kế kiến trúc Multi-modal RAG trích xuất thông tin cấu trúc (JSON Schema) chuẩn xác.
+   - Thiết lập Guardrails kiểm soát ảo giác và hệ thống tính điểm tự tin (Confidence Scoring Engine).
+3. **Data & Backend Engineer (Lê Quốc Khánh — Core, hiện tại)**:
+   - Xây dựng module làm sạch và ẩn danh hóa dữ liệu PII on-premise tuân thủ Nghị định 13/2023/NĐ-CP.
+   - Thiết kế hệ thống RESTful API / Async Webhook tốc độ cao kết nối với cổng Portal thẩm định.
+   - Đảm bảo an toàn hạ tầng Sandbox, quản lý cơ sở dữ liệu Vector DB và PostgreSQL.
+
+---
+
+### 3. Priority Resourcing: Giải pháp bổ sung Capability Gap
+
+Team xác định **3 khoảng trống năng lực (Capability Gap)** quan trọng nhất và đưa ra chiến lược bổ sung tối ưu nguồn lực thực tế (**Hire / Outsource / Partner**):
+
+| STT | Capability Gap (Năng lực còn thiếu) | Phương án lựa chọn | Vì sao chọn phương án này? (Rationale) | Thời điểm cần hoàn thành (Deadline) |
+|:---:|:---|:---:|:---|:---|
+| **1** | **Chuyên môn Y tế & Dược học chuyên sâu** *(Medical Coding ICD-10 & Toa thuốc)* | **PARTNER**<br>*(Hợp tác chuyên gia)* | Ở giai đoạn MVP/Pilot, việc tuyển một bác sĩ hay dược sĩ toàn thời gian (Full-time Hire) là vô cùng tốn kém và lãng phí. Team chỉ cần sự tư vấn chuyên môn theo giờ để chuẩn hóa bộ quy tắc loại trừ quyền lợi và giải thích các toa thuốc khó. Do đó, hợp tác cố vấn với 01 Bác sĩ độc lập là giải pháp kinh tế và nhanh nhất. | **Trước ngày 25/10/2026**<br>*(2 tuần trước khi bấm máy Pilot để thẩm định bộ ruleset)* |
+| **2** | **Gán nhãn & Làm sạch dữ liệu OCR y tế quy mô lớn** *(Medical Data Annotation)* | **OUTSOURCE**<br>*(Thuê ngoài chuyên biệt)* | Việc gán nhãn bounding box và key-value pairs cho 2.000 hóa đơn/toa thuốc lịch sử tốn hàng trăm giờ lao động chân tay. Nếu để kỹ sư AI tự làm sẽ lãng phí năng lực nghiên cứu thuật toán. Thuê một đơn vị gán nhãn dữ liệu chuyên nghiệp (kèm hợp đồng bảo mật NDA chặt chẽ) vừa tiết kiệm 70% chi phí vừa bàn giao nhanh trong 1 tuần. | **Trước ngày 05/11/2026**<br>*(Sprint 2 để mở rộng tập validation)* |
+| **3** | **MLOps & Pipeline Giám sát mô hình liên tục** *(Continuous Evals & Model Monitoring)* | **HIRE**<br>*(Tuyển dụng khi scale)* | Khi mở rộng xử lý hàng nghìn hồ sơ/ngày trên môi trường Production thật, rủi ro mô hình suy giảm hiệu năng (Data & Model Drift) là hiện hữu. Team cần 01 kỹ sư MLOps chuyên trách quản lý CI/CD cho model, tự động hóa regression testing và tối ưu chi phí hạ tầng GPU. | **Tháng 12/2026**<br>*(Sau khi nghiệm thu Pilot thành công và nhận ngân sách mở rộng)* |
+
+---
+
+### 4. Squad Goal
+
+> **"Squad của chúng tôi sở hữu toàn bộ giải pháp xử lý chứng từ bảo hiểm tự động (SmartClaim Core Engine) và chịu trách nhiệm đưa tỷ lệ trích xuất chính xác hồ sơ bồi thường từ 92.4% lên > 95% và rút ngắn thời gian thẩm định sơ bộ từ 25 phút xuống dưới 3 phút/hồ sơ trong 60 ngày tới."**
+
+---
+
+> **✅ GATE 3 PASS**:
+> - Đã chọn mô hình **Embedded AI Team** và giải thích rõ ràng lý do phù hợp với giai đoạn PoC -> Pilot của team 3 người.
+> - Đã phân định rõ Core Roles (hiện tại) và Extended Roles (khi scale).
+> - Đã xác định đủ 3 Capability Gap và đưa ra chiến lược Resourcing đa dạng, đúng bản chất: **Partner** (bác sĩ cố vấn), **Outsource** (gán nhãn dữ liệu), **Hire** (kỹ sư MLOps khi scale) kèm lý do thuyết phục và deadline cụ thể.
+> - Squad Goal được xây dựng đúng cấu trúc chuẩn chỉnh, sở hữu phạm vi và cam kết kết quả đo lường được.
+
+
