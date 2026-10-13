@@ -1,6 +1,6 @@
 # Track 1 - Day 25 — AI Team Lab
 
-- Team: **Team Solo — Thân Thị Kim Chi** *(Quy mô 1 thành viên — Đã áp dụng điều khoản team nhỏ theo quy định Lab)*
+- Team: **Team A — Thân Thị Kim Chi**
 - Thành viên:
   1. **Thân Thị Kim Chi** — MHV: **2A202602797** (Solo Founder & Fullstack AI Builder)
 - Tên dự án: **SmartClaim AI**
@@ -9,6 +9,16 @@
 ## Bài nộp
 
 File: `Day25_AI-Team-Lab_TeamChi.pdf`
+
+---
+
+> [!NOTE]
+> ### 📝 Ghi chú về Hình thức Thực hiện Bài Lab (Solo Project Context)
+> - **Lý do thực hiện cá nhân**: Do 2 thành viên dự kiến ban đầu đã ghép sang nhóm đồ án khác, học viên **Thân Thị Kim Chi (MHV: 2A202602797)** thực hiện bài Lab này với tư cách **Solo AI Builder** cho dự án SmartClaim AI.
+> - **Căn cứ tuân thủ quy chế bài Lab**:
+>   1. **Về quy mô nhóm**: Áp dụng quy định tại đề bài: *"Nếu lớp đã có team dự án cố định khác quy mô này, giữ nguyên team hiện tại và báo giảng viên trước khi bắt đầu Lab."*
+>   2. **Về phân định trách nhiệm RACI**: Áp dụng đúng rule-of-thumb tại Phase 2: *"Với team rất nhỏ, một người có thể đồng thời là R và A. Điều bắt buộc trong Lab: mỗi công việc chỉ có 1 A rõ ràng."* (Học viên kiêm nhiệm R và A ở các hạng mục kỹ thuật/dữ liệu; riêng hạng mục Phê duyệt Nghiệm thu Release giao quyền Accountable duy nhất cho Stakeholder Trưởng phòng Bồi thường để đảm bảo khách quan).
+>   3. **Về quản trị nguồn lực (AI Team & Resourcing)**: Thay vì vẽ cơ cấu cồng kềnh, bài làm tập trung vào bài toán thực chiến của một Solo Founder: năng lực lõi tự phát triển, các khoảng trống năng lực (Capability Gap) được giải quyết hiệu quả bằng **Partner** (cố vấn y tế) và **Outsource** (gán nhãn dữ liệu).
 
 ---
 
