@@ -1,9 +1,13 @@
 # Track 1 - Day 25 — AI Team Lab
 
-- **Team**: Team A — Thân Thị Kim Chi
-- **Thành viên**: Thân Thị Kim Chi — MHV: **2A202602797** (AI Builder & Project Lead)
-- **Tên dự án**: **SmartClaim AI**
-- **Bài nộp**: File PDF 4 trang [`Day25_AI-Team-Lab_TeamA.pdf`](Day25_AI-Team-Lab_TeamA.pdf)
+- Team: **Team A**
+- Thành viên (3–5 người): **Thân Thị Kim Chi** — MHV: **2A202602797** (AI Builder & Project Lead)
+- Tên dự án: **SmartClaim AI**
+- Link sản phẩm/demo (nếu có): https://github.com/kchi24/Track1_Day25_TeamA_SmartClaimAI
+
+## Bài nộp
+
+File: `Day25_AI-Team-Lab_TeamA.pdf`
 
 ---
 
@@ -11,7 +15,7 @@
 
 | STT | Hạng mục | Nội dung thống nhất |
 |:---:|:---|:---|
-| **1** | **Thành viên** | **Thân Thị Kim Chi** (MHV: **2A202602797**) — AI Builder *(thực hiện theo quy chế bài lab cho nhóm nhỏ)* |
+| **1** | **Thành viên** | **Thân Thị Kim Chi** (MHV: **2A202602797**)|
 | **2** | **Tên dự án** | **SmartClaim AI** — Hệ thống tự động trích xuất chứng từ & thẩm định sơ bộ hồ sơ bồi thường bảo hiểm |
 | **3** | **Mục tiêu 1–3 tháng** | • Độ chính xác trích xuất hóa đơn/toa thuốc **> 92%**.<br>• Giảm thời gian xử lý từ **25 phút xuống < 3 phút/hồ sơ**.<br>• Hoàn thành thử nghiệm **Pilot nội bộ 200 hồ sơ claim**. |
 | **4** | **Trưởng nhóm / Repo Owner** | **Thân Thị Kim Chi** (chịu trách nhiệm tạo repo, quản lý artefact và nộp bài) |
