@@ -1,9 +1,9 @@
 # Track 1 - Day 25 — AI Team Lab
 
 - Team: **Team A**
-- Thành viên (3–5 người): **Thân Thị Kim Chi** — MHV: **2A202602797** (AI Builder & Project Lead)
+- Thành viên:
+  1. **Thân Thị Kim Chi** — MHV: **2A202602797** (AI Builder & Project Lead)
 - Tên dự án: **SmartClaim AI**
-- Link sản phẩm/demo (nếu có): https://github.com/kchi24/Track1_Day25_TeamA_SmartClaimAI
 
 ## Bài nộp
 
@@ -11,11 +11,21 @@ File: `Day25_AI-Team-Lab_TeamA.pdf`
 
 ---
 
+> [!NOTE]
+> **Báo cáo về Quy mô Nhóm & Căn cứ thực hiện theo Quy chế bài Lab:**
+> - **Hoàn cảnh thực tế**: Ban đầu nhóm có 3 thành viên, nhưng do 2 bạn đã chuyển ghép sang nhóm đồ án khác theo phân bổ lớp, học viên **Thân Thị Kim Chi** đã báo cáo giảng viên/mentor và được chấp thuận bảo lưu đồ án thực tế **SmartClaim AI** để thực hiện độc lập với vai trò **AI Builder**.
+> - **Căn cứ tuân thủ quy chế bài Lab**:
+>   1. *Về quy mô team*: Áp dụng quy định tại đề bài: *"Nếu lớp đã có team dự án cố định khác quy mô này, giữ nguyên team hiện tại và báo giảng viên trước khi bắt đầu Lab."*
+>   2. *Về phân định trách nhiệm RACI*: Áp dụng đúng quy tắc bài Lab cho team nhỏ: *"Với team rất nhỏ, một người có thể vừa R vừa A. Điều bắt buộc trong Lab: mỗi công việc chỉ có 1 A rõ ràng."* (Học viên kiêm nhiệm R và A các khâu kỹ thuật; khâu Quyết định Release vẫn giao quyền A duy nhất cho Stakeholder Bồi thường).
+>   3. *Về khối lượng & Chuẩn đầu ra*: Hoàn thành đầy đủ 100% chuẩn đầu ra của tất cả 6 Gate (Gate 0 đến Gate 5) như một team hoàn chỉnh, xử lý các khoảng trống năng lực qua mô hình thực tế: **Partner** (cố vấn y tế) và **Outsource** (gán nhãn).
+
+---
+
 ## Phase 0 — Chốt phạm vi & Cách làm (Scope & Ground Rules)
 
 | STT | Hạng mục | Nội dung thống nhất |
 |:---:|:---|:---|
-| **1** | **Thành viên** | **Thân Thị Kim Chi** (MHV: **2A202602797**)|
+| **1** | **Thành viên** | **Thân Thị Kim Chi** — MHV: **2A202602797** (AI Builder & Project Lead) |
 | **2** | **Tên dự án** | **SmartClaim AI** — Hệ thống tự động trích xuất chứng từ & thẩm định sơ bộ hồ sơ bồi thường bảo hiểm |
 | **3** | **Mục tiêu 1–3 tháng** | • Độ chính xác trích xuất hóa đơn/toa thuốc **> 92%**.<br>• Giảm thời gian xử lý từ **25 phút xuống < 3 phút/hồ sơ**.<br>• Hoàn thành thử nghiệm **Pilot nội bộ 200 hồ sơ claim**. |
 | **4** | **Trưởng nhóm / Repo Owner** | **Thân Thị Kim Chi** (chịu trách nhiệm tạo repo, quản lý artefact và nộp bài) |
