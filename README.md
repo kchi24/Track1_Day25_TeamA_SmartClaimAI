@@ -239,4 +239,65 @@ Team xác định **3 khoảng trống năng lực (Capability Gap)** quan trọ
 > - Đã xác định đủ 3 Capability Gap và đưa ra chiến lược Resourcing đa dạng, đúng bản chất: **Partner** (bác sĩ cố vấn), **Outsource** (gán nhãn dữ liệu), **Hire** (kỹ sư MLOps khi scale) kèm lý do thuyết phục và deadline cụ thể.
 > - Squad Goal được xây dựng đúng cấu trúc chuẩn chỉnh, sở hữu phạm vi và cam kết kết quả đo lường được.
 
+---
+
+## 📈 Phase 4 — Artefact 4: Đánh giá Team Health & Growth Plan 30 ngày (Trang 4 PDF)
+
+### 1. Bảng tự chấm điểm Team Health cá nhân (Thang điểm 1–5)
+
+| Khía cạnh đánh giá | Nguyễn Minh Hoàng<br>*(AI Engineer)* | Trần Anh Tuấn<br>*(Product Lead)* | Lê Quốc Khánh<br>*(Data & Backend)* | Điểm Trung Bình Team |
+|:---|:---:|:---:|:---:|:---:|
+| **1. Chất lượng AI** *(Output ổn định, ít ảo giác)* | **4 / 5** | **3 / 5** | **4 / 5** | **3.67 / 5** |
+| **2. Tiến độ** *(Hoàn thành đúng cam kết sprint)* | **3 / 5** | **3 / 5** | **4 / 5** | **3.33 / 5** |
+| **3. Tinh thần team** *(Minh bạch, dám nói thẳng, phối hợp)* | **5 / 5** | **5 / 5** | **4 / 5** | **4.67 / 5** |
+| **4. Tốc độ ra sản phẩm** *(Thời gian từ ý tưởng/model đến demo)* | **3 / 5** | **2 / 5** | **3 / 5** | **2.67 / 5** *(Thấp nhất)* |
+
+---
+
+### 2. Phân tích so sánh điểm & Xác định vấn đề cốt lõi
+
+* **Khía cạnh có điểm số thấp nhất**:  
+  **Tốc độ ra sản phẩm (2.67 / 5)**. Thời gian từ lúc AI Engineer tinh chỉnh xong một prompt hoặc cập nhật model đến lúc có bản cập nhật chạy trên giao diện web cho Product Lead và thẩm định viên thử nghiệm còn quá chậm (thường mất từ 3–4 ngày tích hợp thủ công).
+* **Khía cạnh chênh lệch điểm nhiều nhất**:  
+  **Chất lượng AI (Hoàng chấm 4/5, Tuấn chấm 3/5 — lệch 1 điểm)**.
+* **Lý do có sự chênh lệch**:  
+  - *Nguyễn Minh Hoàng (AI Engineer)* nhìn nhận chất lượng qua các chỉ số benchmark trong phòng lab (F1-score 92.4% trên tập test sạch đã định dạng chuẩn).  
+  - *Trần Anh Tuấn (Product Lead)* nhìn nhận dưới góc độ trải nghiệm của thẩm định viên thực tế: khi gặp các hóa đơn chụp xiên góc, bóng mờ hoặc toa thuốc viết tay có chữ ký đè lên tên thuốc, mô hình vẫn bỏ sót trường hoặc trả về kết quả rỗng, buộc con người phải can thiệp thủ công.
+* **Vấn đề then chốt đe dọa trực tiếp milestone Pilot tiếp theo**:  
+  **Thiếu hệ thống đánh giá tự động (Automated Evals Framework)**: Mỗi lần cập nhật thuật toán, team phải ngồi kiểm thử bằng mắt từng hồ sơ, vừa mất thời gian vừa không phát hiện kịp thời các lỗi hồi quy (regression bugs).
+
+---
+
+### 3. Nâng cấp khung năng lực (Competency Upgrade)
+
+Dựa trên **Competency Framework (L1 — AI Literate, L2 — AI Practitioner, L3 — AI Builder)**:
+
+* **Role lựa chọn**: **AI & Model Engineer (Nguyễn Minh Hoàng)**.
+* **Cấp độ hiện tại**: **Gần L2 — AI Practitioner**  
+  *(Đã thành thạo tích hợp Vision-Language Model, kỹ thuật RAG và Prompt Engineering nâng cao, nhưng quy trình kiểm định chất lượng mô hình vẫn phụ thuộc vào test thủ công cục bộ).*
+* **Năng lực mục tiêu cần nâng tiếp theo**: **AI Evaluation & Automated Quality Benchmarking (Đánh giá chất lượng mô hình tự động)** — bước đệm tiến lên **L3 — AI Builder**.
+* **Hành động thực hành trong 30 ngày**:  
+  Thiết kế bộ **50 "Golden Test Cases"** bao phủ các ca khó thực tế (hóa đơn rách mép, toa viết tắt, bảng kê viện phí nhiều trang) và viết pipeline tự động chạy kiểm thử hồi quy (automated evals) mỗi khi có thay đổi code/prompt trước khi đưa lên môi trường test.
+
+---
+
+### 4. Kế hoạch phát triển Team trong 30 ngày (Team Growth Plan)
+
+Team thống nhất **3 hành động cụ thể, có chủ sở hữu (Owner), hạn chót (Deadline) và tiêu chí hoàn thành đo lường được**:
+
+| STT | Vấn đề cần giải quyết | Hành động cụ thể trong 30 ngày | Owner (Người phụ trách) | Deadline (Hạn chót) | Dấu hiệu hoàn thành (Acceptance Criteria) |
+|:---:|:---|:---|:---:|:---:|:---|
+| **1** | **Chất lượng AI & Thiếu bộ đo tự động** *(Eval Gap)* | Xây dựng bộ **50 Golden Cases** (chuẩn hóa dữ liệu ground-truth y tế); tích hợp script đo lường tự động (F1-score, Field Accuracy, Token Cost). | **Nguyễn Minh Hoàng**<br>*(AI Engineer)* | **28/10/2026** | Script `eval_pipeline.py` chạy tự động < 5 phút, xuất báo cáo so sánh chi tiết độ chính xác từng trường, tự động cảnh báo nếu tỷ lệ trích xuất tụt dưới 90%. |
+| **2** | **Tốc độ ra sản phẩm chậm** *(Deployment Bottleneck)* | Xây dựng môi trường **Staging Web Sandbox nội bộ** với tính năng *"Drag-and-Drop & Instant Inspection"* (kéo thả ảnh chụp chứng từ -> hiển thị kết quả trích xuất và bounding box trong 3 giây). | **Lê Quốc Khánh**<br>*(Backend/Data)* | **05/11/2026** | Triển khai thành công Web Sandbox nội bộ; Product Lead và 2 thẩm định viên có thể tự truy cập upload thử nghiệm bất cứ lúc nào mà không cần hỗ trợ kỹ thuật. |
+| **3** | **Tiến độ & Phối hợp giải quyết Blocker** *(Alignment Gap)* | Thiết lập cơ chế họp cố định **"Weekly Sprint Review & Blocker Clearing" 25 phút vào 16h30 thứ Sáu hàng tuần**; trực tiếp cập nhật tiến độ tương tác với 4 stakeholder ưu tiên. | **Trần Anh Tuấn**<br>*(Product Lead)* | **Bắt đầu 17/10/2026**<br>*(Duy trì liên tục 4 tuần)* | 100% các buổi họp có Action Log gắn hạn hoàn thành cụ thể; tỷ lệ hoàn thành đúng hạn các cam kết trong Sprint tăng từ 70% lên trên 90%. |
+
+---
+
+> **✅ GATE 4 PASS**:
+> - Đã chấm đầy đủ 4 khía cạnh sức khỏe team cho cả 3 thành viên với bảng số liệu rõ ràng.
+> - Đã phân tích thấu đáo điểm thấp nhất (Tốc độ ra sản phẩm 2.67/5) và điểm chênh lệch (Chất lượng AI), chỉ đúng điểm nghẽn eval.
+> - Đã nâng cấp năng lực cho AI Engineer theo khung L1/L2/L3 (từ L2 lên L3 ở mảng AI Evaluation).
+> - Growth Plan 30 ngày gồm đúng 3 hành động thực thi, có **Owner cụ thể, Deadline chính xác và Tiêu chí nghiệm thu định lượng**.
+
+
 
