@@ -17,8 +17,6 @@
 | **4** | **Trưởng nhóm / Repo Owner** | **Thân Thị Kim Chi** (chịu trách nhiệm tạo repo, quản lý artefact và nộp bài) |
 | **5** | **Format bài nộp** | GitHub Repository (`README.md`) + File PDF 4 trang (`Day25_AI-Team-Lab_TeamA.pdf`) |
 
-> **GATE 0 PASS**: Phạm vi rõ ràng, mục tiêu đo lường được, có người duy nhất tổng hợp bài.
-
 ---
 
 ## Phase 1 — Stakeholder Map & Chiến lược (Trang 1 PDF)
@@ -47,8 +45,6 @@
 | **Compliance Officer** | **Blocker**<br>*(Chưa ủng hộ)* | Rò rỉ dữ liệu y tế PII, tuân thủ Nghị định 13/2023/NĐ-CP. | **Trước 10h thứ Ba (20/10)**: Gửi đề án Local Masking PII (Regex/NER on-premise) trước khi qua AI. |
 | **Tech Mentor** | **Champion**<br>*(Ủng hộ)* | Kiến trúc Multi-modal RAG chống ảo giác, benchmark chuẩn hóa. | **Trước 20h thứ Năm (15/10)**: Họp 1-on-1 45p trình bày kiến trúc xử lý bảng biểu & review bộ evals. |
 | **CIO / Core IT** | **Blocker**<br>*(Trung lập)* | Độ ổn định hệ thống Core Insurance, không gây quá tải API nội bộ. | **Trước 15h thứ Năm (22/10)**: Họp kỹ thuật cam kết tích hợp Loose Coupling (Async Webhook & S3). |
-
-> **GATE 1 PASS**: Đủ 7 stakeholder cụ thể, map 4 góc kèm stance thực tế, 4 hành động có deadline rõ ràng.
 
 ---
 
@@ -80,8 +76,6 @@
 
 *(Quy tắc bài lab: Mỗi công việc chỉ có đúng 1 Accountable duy nhất).*
 
-> **GATE 2 PASS**: Pitch chuẩn Conclusion First + Bằng chứng + Small ask; 1 phản biện có giải pháp kỹ thuật; RACI mỗi việc đúng 1 A.
-
 ---
 
 ## Phase 3 — Thiết kế AI Team & Priority Resourcing (Trang 3 PDF)
@@ -96,9 +90,6 @@
   3. **MLOps & Continuous Evals** ➔ **HIRE** (Tuyển kỹ sư MLOps khi hệ thống scale sau đợt pilot; hạn chót: *Tháng 12/2026*).
 - **Squad Goal**: *"Dự án SmartClaim AI sở hữu giải pháp xử lý chứng từ bảo hiểm tự động và chịu trách nhiệm đưa tỷ lệ trích xuất từ 92.4% lên > 95%, giảm thời gian xử lý từ 25 phút còn < 3 phút/hồ sơ trong 60 ngày tới."*
 
-> **GATE 3 PASS**: Có kiến trúc và lý do, phân định Core/Extended, giải quyết 3 gap bằng Hire/Outsource/Partner, có Squad Goal đo lường được.
-
----
 
 ## Phase 4 — Team Health & Growth Plan 30 ngày (Trang 4 PDF)
 
@@ -121,18 +112,13 @@
 | 2 | **Tốc độ ra sản phẩm** | Dựng Staging Web Sandbox kéo-thả kiểm tra chứng từ 3s. | Kim Chi | 05/11/2026 | Web Sandbox online; thẩm định viên tự upload test được ngay. |
 | 3 | **Tiến độ & Stakeholder** | Họp Weekly Review 30 phút vào chiều thứ Sáu hàng tuần. | Kim Chi | 16/10/2026 | 100% các tuần có Action Log gỡ khó dứt điểm cho Blocker. |
 
-> **GATE 4 PASS**: Chấm đủ 4 khía cạnh, chỉ rõ điểm nghẽn eval, nâng cấp năng lực L2 ➔ L3, 3 hành động có Owner + Deadline + Tiêu chí rõ ràng.
-
 ---
 
-## Phase 5 — Tổng kết bàn giao & Báo cáo nộp bài
+## Phase 5 — Thông tin bàn giao & Nộp bài
 
 - **Repository**: `Track1_Day25_TeamA_SmartClaimAI`
-- **Link nộp bài**: `https://github.com/kchi24/Track1_Day25_TeamA_SmartClaimAI`
 - **File Báo cáo PDF**: [`Day25_AI-Team-Lab_TeamA.pdf`](Day25_AI-Team-Lab_TeamA.pdf) (Tối đa đúng 4 trang A4)
   - Trang 1: Stakeholder Map & 4 Chiến lược ưu tiên
   - Trang 2: Pitch "Kết luận trước", Xử lý phản biện & RACI Matrix
   - Trang 3: Thiết kế AI Team & Priority Resourcing (Hire/Outsource/Partner)
   - Trang 4: Team Health & Growth Plan 30 ngày
-
-> **GATE 5 PASS**: Repo hoàn thiện với `README.md` tinh gọn và file PDF báo cáo tối đa 4 trang sẵn sàng nộp bài!
